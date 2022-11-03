@@ -1,10 +1,15 @@
 package com.supermarket.pages;
 
 import java.awt.AWTException;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.supermarket.utilities.Excel;
 import com.supermarket.utilities.GeneralUtilities;
@@ -17,45 +22,53 @@ public class ManageDeliveryBoyPage {
 	GeneralUtilities generalutilities;
 
 	@FindBy(xpath = "//li[@class='nav-item']//a[@href='https://groceryapp.uniqassosiates.com/admin/list-deliveryboy']")
-	WebElement managedeliveryboyoption;
+	private WebElement managedeliveryboyoption;
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
-	WebElement newoption;
+	private WebElement newoption;
 	@FindBy(xpath = "//input[@id='name']")
-	WebElement namefeild;
+	private WebElement namefeild;
 	@FindBy(xpath = "//input[@id='email']")
-	WebElement emailfeild;
+	private WebElement emailfeild;
 	@FindBy(xpath = "//input[@id='phone']")
-	WebElement phonenumberfeild;
+	private WebElement phonenumberfeild;
 	@FindBy(xpath = "//textarea[@id='address']")
-	WebElement addressfeild;
+	private WebElement addressfeild;
 	@FindBy(xpath = "//input[@id='username']")
 	private WebElement usernamefeild;
 	@FindBy(xpath = "//input[@id='password']")
 	private WebElement passwordfeild;
 	@FindBy(xpath = "//button[text()='Save']")
-	WebElement savebutton;
+	private WebElement savebutton;
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
-	WebElement alert;
+	private WebElement alert;
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
-	WebElement searchbutton;
+	private WebElement searchbutton;
 	@FindBy(xpath = "//input[@id='un']")
-	WebElement searchbyname;
+	private WebElement searchbyname;
 	@FindBy(xpath = "//input[@id='ut']")
-	WebElement searchbyemail;
+	private WebElement searchbyemail;
 	@FindBy(xpath = "//input[@id='ph']")
-	WebElement searchbyphonenumber;
+	private WebElement searchbyphonenumber;
 	@FindBy(xpath = "//button[@class='btn btn-block-sm btn-danger']")
-	WebElement searchsearch;
+	private WebElement searchsearch;
 	@FindBy(xpath = "//table/tbody/tr[1]")
-	WebElement table;
+	private WebElement table;
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/Deliveryboy/edit?edit=427&page_ad=1']")
-	WebElement editbutton;
+	private WebElement editbutton;
 	@FindBy(xpath="//input[@id='name']")
-	WebElement editname;
+	private WebElement editname;
 	@FindBy(xpath = "//button[@class='btn btn-danger']")
-	WebElement updatebutton;
+	private WebElement updatebutton;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	WebElement alertmessagecolor;
+	private WebElement alertmessagecolor;
+	@FindBy(xpath = "//a[@class='btn btn-sm btn btn-danger btncss']")
+	private WebElement editdelete;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	private WebElement editdeletecolor;
+	@FindBy(xpath="//table/tbody/tr[3]/td[6]")
+	private WebElement activestatus;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	private WebElement statusalert;
 
 	public ManageDeliveryBoyPage(WebDriver driver) {
 		this.driver = driver;
@@ -173,6 +186,25 @@ public class ManageDeliveryBoyPage {
 		generalutilities= new GeneralUtilities(driver);
 		return alertmessagecolor.getCssValue("background");
 	}
+	public void editOption_delete_button()
+	{
+		editdelete.click();
+		driver.switchTo().alert().accept();
+	}
+	public String alert_message_shown()
+	{
+		generalutilities= new GeneralUtilities(driver);
+		return editdeletecolor.getCssValue("background");
+	}
+	public void status_click()
+	{
+		activestatus.click();
+	}
+	public String status_alert()
+	{
+		generalutilities= new GeneralUtilities(driver);
+		return statusalert.getCssValue("background");
+	}
 	
-
+	
 }

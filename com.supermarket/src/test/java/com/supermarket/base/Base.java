@@ -81,12 +81,12 @@ public class Base {
 	public void tearDown(ITestResult itestresult)//inbuilt listner testcasename and screenshotname same
 	{
 		//driver.close();
-		sceenshot= new ScreenShot();
+		/*sceenshot= new ScreenShot();
 		if(itestresult.getStatus()== ITestResult.FAILURE)
 		{
 			String testcaseName= itestresult.getName();
 			sceenshot.take_screenShot(driver,testcaseName);
-		}
+		}*/
 		
 	}
 	
