@@ -1,6 +1,7 @@
 package com.supermarket.pages;
 
 import java.awt.AWTException;
+import java.io.File;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -52,8 +53,46 @@ public class ManageExpensePage {
 	
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-expense']")
 	private WebElement mngexpexpense;
-	@FindBy(xpath = "//select[@id='user_id']")
+	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
 	private WebElement mngexpexpensenewselect;
+	@FindBy(xpath = "//select[@id='user_id']")
+	private WebElement mngexpuserdpdw;
+	@FindBy(xpath = "//option[text()='Sumesh(PR)']")
+	private WebElement mngexpdropnew;
+	@FindBy(xpath = "//select[@id='ex_cat']")
+	private WebElement mngexpcategory;
+	@FindBy(xpath = "//option[text()='IceCreams']")
+	private WebElement mngexpcategorydrop;
+	@FindBy(xpath = "//select[@id='order_id']")
+	private WebElement mngexporderid;
+	@FindBy(xpath = "//option[text()='211']")
+	private WebElement mngexporderiddrop;
+	@FindBy(xpath = "//select[@id='purchase_id']")
+	private WebElement mngexppurchaseid;
+	@FindBy(xpath = "//select[@id='purchase_id']//option[text()='56']")
+	private WebElement mngexppurchaseiddrop;
+	@FindBy(xpath = "//select[@id='ex_type']")
+	private WebElement mngexpexpensetype;
+	@FindBy(xpath = "//select[@id='ex_type']//option[text()='Debit Cash']")
+	private WebElement mngexpexpensedrop;
+	@FindBy(xpath = "//input[@id='amount']")
+	private WebElement mngexpamount;
+	@FindBy(xpath = "//input[@type='file']")
+	private WebElement mngexpfileupload;
+	@FindBy(xpath = "//button[@class='btn btn-danger']")
+	private WebElement mngexpsave;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	private WebElement mngexpalert;
+	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
+	private WebElement mngexpsearchbutton;
+	@FindBy(xpath = "//select[@id='um']")
+	private WebElement mngexpsearchuser;
+	@FindBy(xpath = "//select[@id='um']//option[text()='Sumesh(PR)']")
+	private WebElement mngexpsearchdropdown;
+	@FindBy(xpath = "//button[@class='btn btn-danger btn-fix']")
+	private WebElement mngexpsearch;
+	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']")
+	private WebElement mngexpsearchtable;
 	public ManageExpensePage(WebDriver driver)
 	{
 		this.driver= driver;
@@ -141,6 +180,95 @@ public class ManageExpensePage {
 	{
 		mngexpexpense.click();
 	}
-	
+	public void click_mngexpExpenseNew()
+	{
+		mngexpexpensenewselect.click();
+	}
+	public void click_mngexpNew_userDropdown()
+	{
+		mngexpuserdpdw.click();
+	}
+	public void select_mngexpExpenseDropdown()
+	{
+		pageutility= new PageUtility(driver);
+		pageutility.scroll_and_click(mngexpdropnew);
+	}
+	public void click_mngexpNew_category()
+	{
+		mngexpcategory.click();
+	}
+	public void click_mngexpNew_categoryDropdown()
+	{
+		pageutility= new PageUtility(driver);
+		pageutility.scroll_and_click(mngexpcategorydrop);
+	}
+	public void click_mngexpNew_orderid()
+	{
+		mngexporderid.click();
+	}
+	public void click_mngexpNew_orderid_dropdown()
+	{
+		pageutility= new PageUtility(driver);
+		pageutility.scroll_and_click(mngexporderiddrop);
+	}
+	public void click_mngexpNew_purchaseid()
+	{
+		mngexppurchaseid.click();
+	}
+	public void click_mngexpNew_purchaseid_dropdown()
+	{
+		pageutility= new PageUtility(driver);
+		pageutility.scroll_and_click(mngexppurchaseiddrop);
+	}
+	public void click_mngexpNew_expenseType()
+	{
+		mngexpexpensetype.click();
+	}
+	public void click_mngexpNew_expenseType_dropdown()
+	{
+		pageutility= new PageUtility(driver);
+		pageutility.scroll_and_click(mngexpexpensedrop);
+	}
+	public void enter_mngexpNew_amount()
+	{
+		mngexpamount.sendKeys("5000");
+	}
+	public void mngexpNew_fileUpload()
+	{
+		File fileDOC= new File("C:\\Users\\lenovo\\Desktop\\Doc.docx");
+		mngexpfileupload.sendKeys(fileDOC.getAbsolutePath());
+	}
+	public void click_mngexpSave()
+	{
+		pageutility= new PageUtility(driver);
+		pageutility.scroll_and_click(mngexpsave);
+		
+	}
+	public String mngexpNew_alert_message()
+	{
+	generalutilities= new GeneralUtilities(driver);
+	return mngexpalert.getCssValue("background");
+	}
+	public void click_mngexp_searchButton()
+	{
+		mngexpsearchbutton.click();
+	}
+	public void click_mngexp_searchUser()
+	{
+		mngexpsearchuser.click();
+	}
+	public void click_mngexp_searchUserDropdown()
+	{
+		mngexpsearchdropdown.click();
+	}
+	public void click_mngexp_search()
+	{
+		mngexpsearch.click();
+	}
+	public boolean is_mngexpSearch_tablePresent()
+	{
+		generalutilities= new GeneralUtilities(driver);
+		return generalutilities.is_Displayed(mngexpsearchtable);
+	}
 
 }

@@ -5,8 +5,8 @@
     <classes>
       <class name="com.supermarket.tests.ManageExpenseTest">
         <methods>
+          <include name="verify_manageExpenseCategory_search"/>
           <include name="tearDown"/>
-          <include name="verify_deleteButton"/>
           <include name="setUpCrossBrowser"/>
           <include name="setUp"/>
         </methods>

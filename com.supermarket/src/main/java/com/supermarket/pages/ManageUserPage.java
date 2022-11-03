@@ -18,6 +18,8 @@ public class ManageUserPage {
 	PageUtility pageutility;
 	@FindBy(xpath = "//i[@class='nav-icon fas fa-user']")
 	private WebElement manageusers;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	private WebElement manageusealert;
 	public ManageUserPage(WebDriver driver)
 	{
 		this.driver= driver;
@@ -41,11 +43,17 @@ public class ManageUserPage {
 				j++; break;
 			}
 		}
+		
 		WebElement deactivateButton= driver.findElement(By.xpath("//tbody//tr["+j+"]//td[5]//a"));
 		deactivateButton.click();
-		
+		}
+		public String manageUser_alert_message()
+		{
+			generalutilities= new GeneralUtilities(driver);
+			return manageusealert.getCssValue("background");
+		}
 		
 				
-	}
+	
 
 }

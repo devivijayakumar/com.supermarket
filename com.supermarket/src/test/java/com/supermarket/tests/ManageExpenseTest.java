@@ -70,5 +70,45 @@ public class ManageExpenseTest extends Base {
 	String actualresult= manageexpensepage.delete_alert_message();
 	Assert.assertEquals(actualresult, Constants.EXPECTED_DELETE_BUTTON_ALERT_BACKGROUND);
 	}
+	@Test
+	public void verify_Manage_expense_new()
+	{
+		loginpage = new LoginPage(driver);
+		loginpage.login();
+		manageexpensepage= new ManageExpensePage(driver);
+		manageexpensepage.click_on_manageExpense();
+		manageexpensepage.click_mngexpexpenseCategory();
+		manageexpensepage.click_mngexpExpenseNew();
+		manageexpensepage.click_mngexpNew_userDropdown();
+		manageexpensepage.select_mngexpExpenseDropdown();
+		manageexpensepage.click_mngexpNew_category();
+		manageexpensepage.click_mngexpNew_categoryDropdown();
+		manageexpensepage.click_mngexpNew_orderid();
+		manageexpensepage.click_mngexpNew_orderid_dropdown();
+		manageexpensepage.click_mngexpNew_purchaseid();
+		manageexpensepage.click_mngexpNew_purchaseid_dropdown();
+		manageexpensepage.click_mngexpNew_expenseType();
+		manageexpensepage.click_mngexpNew_expenseType_dropdown();
+		manageexpensepage.enter_mngexpNew_amount();
+		manageexpensepage.mngexpNew_fileUpload();
+		manageexpensepage.click_mngexpSave();
+		constants= new Constants();
+		String actualresult= manageexpensepage.mngexpNew_alert_message();
+		Assert.assertEquals(actualresult, Constants.EXPECTED_MNGEXP_NEW_ALER);
+		}
+	@Test
+	public void verify_manageExpenseCategory_search()
+	{
+		loginpage = new LoginPage(driver);
+		loginpage.login();
+		manageexpensepage= new ManageExpensePage(driver);
+		manageexpensepage.click_on_manageExpense();
+		manageexpensepage.click_mngexpexpenseCategory();
+		manageexpensepage.click_mngexp_searchButton();
+		manageexpensepage.click_mngexp_searchUser();
+		manageexpensepage.click_mngexp_searchUserDropdown();
+		manageexpensepage.click_mngexp_search();
+		Assert.assertTrue(manageexpensepage.is_mngexpSearch_tablePresent());
+	}
 
 }

@@ -19,6 +19,9 @@ public class Constants {
 	public static final String EXPECTED_EDIT_BUTTON_ALERT_BACKGROUND_COLOR= "rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
 	/**manageexpensedelete**/
 	public static final String EXPECTED_DELETE_BUTTON_ALERT_BACKGROUND="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
-			                                                   
+	/**manageexpense expense category new**/
+	public static final String EXPECTED_MNGEXP_NEW_ALER="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
+	/**manageuser alert**/
+	public static final String EXPECTED_ALERT_MESSAGE="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
 	
 }
