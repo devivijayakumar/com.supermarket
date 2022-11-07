@@ -4,6 +4,8 @@ import java.awt.AWTException;
 import java.util.Iterator;
 import java.util.Set;
 
+import javax.xml.xpath.XPath;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -69,6 +71,8 @@ public class ManageDeliveryBoyPage {
 	private WebElement activestatus;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement statusalert;
+	@FindBy (xpath="//table/tbody/tr[1]/td[1]")
+	private WebElement searchnameactaul;
 
 	public ManageDeliveryBoyPage(WebDriver driver) {
 		this.driver = driver;
@@ -132,7 +136,9 @@ public class ManageDeliveryBoyPage {
 		String address = excel.getCellData(0, 3);
 		String username = excel.getCellData(0, 4);
 		String password = excel.getCellData(0, 5);
-		create_delivery_boy(name, email, number, address, username, password);
+		String timestamp=GeneralUtilities.get_timestamp();
+		create_delivery_boy(name+timestamp, email, number, address, username+timestamp, password);
+		
 	}
 	public boolean is_alert_message_visible()
 	{
@@ -146,8 +152,13 @@ public class ManageDeliveryBoyPage {
 	}
 	public void enter_search_name()
 	{
-		searchbyname.sendKeys("paddy");
-		
+		 String name = excel.getCellData(0, 0);;
+		String timestamp=GeneralUtilities.get_timestamp();
+		searchbyname.sendKeys(name+timestamp);		
+	}
+	public String table_name()
+	{
+		return searchnameactaul.getText();
 	}
 	public void enter_search_email()
 	{
@@ -160,6 +171,12 @@ public class ManageDeliveryBoyPage {
 	public void click_searchSearch()
 	{
 		searchsearch.click();
+	}
+	public String get_text_search()
+	{
+		generalutilities= new GeneralUtilities(driver);
+		return searchbyname.getText();
+		
 	}
 	public boolean is_table_present() 
 	{

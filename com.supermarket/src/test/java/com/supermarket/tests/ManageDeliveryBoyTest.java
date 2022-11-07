@@ -9,11 +9,13 @@ import com.supermarket.base.Base;
 import com.supermarket.constants.Constants;
 import com.supermarket.pages.LoginPage;
 import com.supermarket.pages.ManageDeliveryBoyPage;
+import com.supermarket.utilities.GeneralUtilities;
 
 public class ManageDeliveryBoyTest extends Base {
 	ManageDeliveryBoyPage managedeliveryboypage;
 	LoginPage loginpage;
 	Constants constants;
+	
 
 	@Test
 	public void verify_create_delivery_boy() {
@@ -115,6 +117,22 @@ public class ManageDeliveryBoyTest extends Base {
 		String actualresult= managedeliveryboypage.status_alert();
 		String expectedresult= Constants.EXPECTED_ALERT_BACKGROUND_COLOR;
 		Assert.assertEquals(actualresult, expectedresult);
+	}
+	@Test
+	public void verify_new_deliveryBoy_creation()
+	{
+		loginpage = new LoginPage(driver);
+		loginpage.login();
+		managedeliveryboypage = new ManageDeliveryBoyPage(driver);
+		managedeliveryboypage.click_manageDeliveryBoy();
+		managedeliveryboypage.click_new_button();
+		managedeliveryboypage.create_delivery_boy();
+		managedeliveryboypage.click_save_option();
+		managedeliveryboypage.click_search_button();
+		managedeliveryboypage.enter_search_name();
+		managedeliveryboypage.click_searchSearch();
+		Assert.assertTrue(managedeliveryboypage.is_table_present());
+		
 	}
 	
 

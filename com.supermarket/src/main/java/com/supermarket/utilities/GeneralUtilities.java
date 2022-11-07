@@ -1,6 +1,8 @@
 package com.supermarket.utilities;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -46,5 +48,11 @@ public class GeneralUtilities {
 	public String get_CssValue(WebElement element, String value) {
 		return element.getCssValue(value);
 	}
+	public static String get_timestamp()
+	{
+		String timstamp= new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());
+		return timstamp;
+	}
+	
 
 }
