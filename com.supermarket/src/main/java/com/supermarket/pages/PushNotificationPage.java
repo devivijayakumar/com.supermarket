@@ -20,7 +20,7 @@ public class PushNotificationPage {
 	private WebElement descriptionFeild;
 	@FindBy(xpath = "//button[@class='btn btn-block-sm btn-info']")
 	private WebElement sendButton;
-	@FindBy(xpath = "//div[@class='alert alert-sucess alert-dismissible']")
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement alertSucessText;
 	
 	public PushNotificationPage(WebDriver driver)
@@ -32,25 +32,25 @@ public class PushNotificationPage {
 	{
 		pushNotification.click();
 	}
-	public void enter_titleFeild(String title)
+	public void enter_titleFeild(String title1)
 	{
-		titleFeild.sendKeys(title);
+		titleFeild.sendKeys(title1);
 	}
-	public void enter_descriptionFeild(String description)
+	public void enter_descriptionFeild(String description1)
 	{
-		descriptionFeild.sendKeys(description);
+		descriptionFeild.sendKeys(description1);
 	}
 	public void click_sendButton()
 	{
 		sendButton.click();
 	}
-	public String getTextSucessAlert_PushNotification(String title,String description)
+	public String getbackgroundColor_PushNotification(String title1,String description1)
 	{
-		enter_titleFeild(title);
-		enter_descriptionFeild(description);
+		enter_titleFeild(title1);
+		enter_descriptionFeild(description1);
 		click_sendButton();
 		generalutilities= new GeneralUtilities(driver);
-		return generalutilities.get_Text(alertSucessText);
+		return alertSucessText.getCssValue("background");
 	}
 	
 

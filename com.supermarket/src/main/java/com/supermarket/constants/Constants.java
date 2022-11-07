@@ -22,6 +22,7 @@ public class Constants {
 	/**manageexpense expense category new**/
 	public static final String EXPECTED_MNGEXP_NEW_ALER="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
 	/**manageuser alert**/
-	public static final String EXPECTED_ALERT_MESSAGE="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
-	
+	public static final String EXPECTED_ALERT_MESSAGE1="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
+	/**pushnotification**/
+	public static final String EXPECTED_ALERT_MESSAGE_PUSHNOTIFICATION="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
 }
