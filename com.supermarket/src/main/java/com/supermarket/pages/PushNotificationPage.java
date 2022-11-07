@@ -6,9 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.supermarket.utilities.GeneralUtilities;
+import com.supermarket.utilities.PageUtility;
 
 public class PushNotificationPage {
 	WebDriver driver;
+	GeneralUtilities generalutilities;
+	PageUtility pageutility;
 	@FindBy(xpath = "//p[text()='Push Notifications']")
 	private WebElement pushNotification;
 	@FindBy(xpath = "//input[@id='title']")
@@ -46,8 +49,8 @@ public class PushNotificationPage {
 		enter_titleFeild(title);
 		enter_descriptionFeild(description);
 		click_sendButton();
-		GeneralUtilities generalUtilities= new GeneralUtilities(driver);
-		return generalUtilities.get_Text(alertSucessText);
+		generalutilities= new GeneralUtilities(driver);
+		return generalutilities.get_Text(alertSucessText);
 	}
 	
 

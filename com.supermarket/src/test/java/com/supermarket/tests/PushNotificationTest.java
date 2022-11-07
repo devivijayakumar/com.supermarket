@@ -25,8 +25,8 @@ public class PushNotificationTest extends Base {
 		//System.out.println(pushnotificationpage.getTextSucessAlert_PushNotification("abc","def"));
 		pdfreader= new PdfReader();
 		map= pdfreader.Pdf_ReadData("pushnotificationdata");
-		System.out.println(map.get("title1"));
-		System.out.println(map.get("title2"));
+		System.out.println(map.get("title"));
+		System.out.println(map.get("title"));
 	}
 
 }
