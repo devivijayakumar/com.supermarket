@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-07T22:46:32 IST" name="Default suite" finished-at="2022-11-07T22:46:43 IST" duration-ms="10543">
+  <suite started-at="2022-11-09T12:04:39 IST" name="Default suite" finished-at="2022-11-09T12:04:51 IST" duration-ms="11460">
     <groups>
-      <group name="smoke">
-        <method signature="PushNotificationTest.verify_PushNotification()[pri:0, instance:com.supermarket.tests.PushNotificationTest@121314f7]" name="verify_PushNotification" class="com.supermarket.tests.PushNotificationTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-11-07T22:46:32 IST" name="Default test" finished-at="2022-11-07T22:46:43 IST" duration-ms="10543">
-      <class name="com.supermarket.tests.PushNotificationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.PushNotificationTest@121314f7]" started-at="2022-11-07T22:46:33 IST" name="setUp" finished-at="2022-11-07T22:46:39 IST" duration-ms="6119" status="PASS">
+    <test started-at="2022-11-09T12:04:39 IST" name="Default test" finished-at="2022-11-09T12:04:51 IST" duration-ms="11460">
+      <class name="ManageOfferCodeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ManageOfferCodeTest@576d5deb]" started-at="2022-11-09T12:04:40 IST" name="setUp" finished-at="2022-11-09T12:04:47 IST" duration-ms="7526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_PushNotification()[pri:0, instance:com.supermarket.tests.PushNotificationTest@121314f7]" started-at="2022-11-07T22:46:39 IST" name="verify_PushNotification" finished-at="2022-11-07T22:46:43 IST" duration-ms="4357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_PushNotification -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.PushNotificationTest@121314f7]" started-at="2022-11-07T22:46:43 IST" name="tearDown" finished-at="2022-11-07T22:46:43 IST" duration-ms="0" status="PASS">
+        <test-method signature="verify_SearchOfferCodes(java.lang.String)[pri:0, instance:ManageOfferCodeTest@576d5deb]" started-at="2022-11-09T12:04:47 IST" name="verify_SearchOfferCodes" data-provider="searchOffers" finished-at="2022-11-09T12:04:51 IST" duration-ms="3842" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_PushNotification status=SUCCESS method=PushNotificationTest.verify_PushNotification()[pri:0, instance:com.supermarket.tests.PushNotificationTest@121314f7] output={null}]]]>
+                <![CDATA[TRYNEW20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_SearchOfferCodes -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ManageOfferCodeTest@576d5deb]" started-at="2022-11-09T12:04:51 IST" name="tearDown" finished-at="2022-11-09T12:04:51 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_SearchOfferCodes status=SUCCESS method=ManageOfferCodeTest.verify_SearchOfferCodes(java.lang.String)[pri:0, instance:ManageOfferCodeTest@576d5deb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.supermarket.tests.PushNotificationTest -->
+      </class> <!-- ManageOfferCodeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

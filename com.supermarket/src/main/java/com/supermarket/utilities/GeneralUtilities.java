@@ -53,6 +53,9 @@ public class GeneralUtilities {
 		String timstamp= new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());
 		return timstamp;
 	}
+	public String get_Attribute(WebElement element, String value) {
+		return element.getAttribute(value);
+	}
 	
 
 }

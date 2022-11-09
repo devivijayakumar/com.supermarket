@@ -42,23 +42,23 @@ public class ManageDeliveryBoyPage {
 	private WebElement passwordfeild;
 	@FindBy(xpath = "//button[text()='Save']")
 	private WebElement savebutton;
-	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+	@FindBy(xpath = "//h5[text()=' Alert!']")
 	private WebElement alert;
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
 	private WebElement searchbutton;
 	@FindBy(xpath = "//input[@id='un']")
 	private WebElement searchbyname;
+	@FindBy(xpath = "//table//tbody//tr[1]//td[1]")
+	private WebElement searchtableresult;
 	@FindBy(xpath = "//input[@id='ut']")
 	private WebElement searchbyemail;
 	@FindBy(xpath = "//input[@id='ph']")
 	private WebElement searchbyphonenumber;
 	@FindBy(xpath = "//button[@class='btn btn-block-sm btn-danger']")
 	private WebElement searchsearch;
-	@FindBy(xpath = "//table/tbody/tr[1]")
-	private WebElement table;
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/Deliveryboy/edit?edit=427&page_ad=1']")
 	private WebElement editbutton;
-	@FindBy(xpath="//input[@id='name']")
+	@FindBy(xpath = "//input[@id='name']")
 	private WebElement editname;
 	@FindBy(xpath = "//button[@class='btn btn-danger']")
 	private WebElement updatebutton;
@@ -68,11 +68,11 @@ public class ManageDeliveryBoyPage {
 	private WebElement editdelete;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement editdeletecolor;
-	@FindBy(xpath="//table/tbody/tr[3]/td[6]")
+	@FindBy(xpath = "//table/tbody/tr[3]/td[6]")
 	private WebElement activestatus;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement statusalert;
-	@FindBy (xpath="//table/tbody/tr[1]/td[1]")
+	@FindBy(xpath = "//table/tbody/tr[1]/td[1]")
 	private WebElement searchnameactaul;
 
 	public ManageDeliveryBoyPage(WebDriver driver) {
@@ -128,101 +128,85 @@ public class ManageDeliveryBoyPage {
 		enter_password(password);
 	}
 
-	public void create_delivery_boy() {
+	public String get_text_alert_new() {
+		generalutilities = new GeneralUtilities(driver);
 
-		excel.setExcelFile("Delivery boy details", "deliveryboylist");
-		String name = excel.getCellData(0, 0);
-		String email = excel.getCellData(0, 1);
-		String number = excel.getCellData(0, 2);
-		String address = excel.getCellData(0, 3);
-		String username = excel.getCellData(0, 4);
-		String password = excel.getCellData(0, 5);
-		String timestamp=GeneralUtilities.get_timestamp();
-		create_delivery_boy(name+timestamp, email, number, address, username+timestamp, password);
-		
+		return alert.getText();
 	}
-	public boolean is_alert_message_visible()
-	{
-		generalutilities= new GeneralUtilities(driver);
-		generalutilities.is_Displayed(alert);
-		return alert.isEnabled();
-	}
-	public void click_search_button()
-	{
+
+	public void click_search_button() {
 		searchbutton.click();
 	}
-	public void enter_search_name()
-	{
-		 String name = excel.getCellData(0, 0);;
-		String timestamp=GeneralUtilities.get_timestamp();
-		searchbyname.sendKeys(name+timestamp);		
+
+	public void enter_search_name(String name) {
+		searchbyname.sendKeys(name);
 	}
-	public String table_name()
-	{
+
+	public String table_name() {
 		return searchnameactaul.getText();
 	}
-	public void enter_search_email()
-	{
-		searchbyemail.sendKeys("devi1232@gmail.com");
+
+	public void enter_search_email(String email) {
+		searchbyemail.sendKeys(email);
 	}
-	public void enetr_search_phonenumber()
-	{
-		searchbyphonenumber.sendKeys("1.23456789E8");
+
+	public void enetr_search_phonenumber(String number) {
+		searchbyphonenumber.sendKeys(number);
 	}
-	public void click_searchSearch()
-	{
+
+	public void click_searchSearch() {
 		searchsearch.click();
 	}
-	public String get_text_search()
-	{
-		generalutilities= new GeneralUtilities(driver);
-		return searchbyname.getText();
+
+	public String get_attribute_search() {
+		generalutilities = new GeneralUtilities(driver);
+		return searchbyname.getAttribute("value");
+
+	}
+
+	public String get_attribute_searchresult() {
+		generalutilities = new GeneralUtilities(driver);
+		return searchtableresult.getAttribute("value");
 		
 	}
-	public boolean is_table_present() 
-	{
-		generalutilities= new GeneralUtilities(driver);
-		return generalutilities.is_Displayed(table);
-	}
-	public void click_editOption()
-	{
+
+	public void click_editOption() {
 		editbutton.click();
 	}
-	public void verify_editNmae() throws AWTException
-	{
-		pageutility= new PageUtility(driver);
+
+	public void verify_editNmae() throws AWTException {
+		pageutility = new PageUtility(driver);
 		pageutility.keyboard_interaction(editname);
 		editname.sendKeys("nameuser");
 	}
-	public void click_updateButton()
-	{
-		pageutility= new PageUtility(driver);
+
+	public void click_updateButton() {
+		pageutility = new PageUtility(driver);
 		pageutility.scroll_and_click(updatebutton);
 	}
-	public String update_alert_message()
-	{
-		generalutilities= new GeneralUtilities(driver);
+
+	public String update_alert_message() {
+		generalutilities = new GeneralUtilities(driver);
 		return alertmessagecolor.getCssValue("background");
 	}
-	public void editOption_delete_button()
-	{
+
+	public void editOption_delete_button() {
 		editdelete.click();
 		driver.switchTo().alert().accept();
 	}
-	public String alert_message_shown()
-	{
-		generalutilities= new GeneralUtilities(driver);
+
+	public String alert_message_shown() {
+		generalutilities = new GeneralUtilities(driver);
 		return editdeletecolor.getCssValue("background");
 	}
-	public void status_click()
-	{
+
+	public void status_click() {
 		activestatus.click();
 	}
-	public String status_alert()
-	{
-		generalutilities= new GeneralUtilities(driver);
+
+	public String status_alert() {
+		generalutilities = new GeneralUtilities(driver);
 		return statusalert.getCssValue("background");
 	}
-	
-	
+
 }
