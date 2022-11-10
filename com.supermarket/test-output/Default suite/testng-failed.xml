@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.supermarket.tests.ManageLocationTest">
+      <class name="com.supermarket.tests.ManageDeliveryBoyTest">
         <methods>
-          <include name="verify_DeleteOption"/>
+          <include name="verify_create_delivery_boy"/>
           <include name="tearDown"/>
           <include name="setUpCrossBrowser"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.supermarket.tests.ManageLocationTest -->
+      </class> <!-- com.supermarket.tests.ManageDeliveryBoyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
