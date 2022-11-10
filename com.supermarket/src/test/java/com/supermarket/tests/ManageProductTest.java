@@ -38,8 +38,8 @@ public class ManageProductTest extends Base  {
 		manageproductpage.enter_PurchasePrice(data8);
 		manageproductpage.enter_Description(data9);
 		manageproductpage.click_StockFeild();
-		manageproductpage.image_Upload(constants.EXPECTED_IMAGE_UPLOAD);
-		manageproductpage.sub_Image_Upload(constants.EXPECTED_SUB_IMAGE_UPLOAD);
+		manageproductpage.image_Upload(Constants.EXPECTED_IMAGE_UPLOAD);
+		manageproductpage.sub_Image_Upload(Constants.EXPECTED_SUB_IMAGE_UPLOAD);
 		manageproductpage.click_Featured_radioButton();
 		manageproductpage.click_comboPack_radioButton();
 		manageproductpage.click_save_button();

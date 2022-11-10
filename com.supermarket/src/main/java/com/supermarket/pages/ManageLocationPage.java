@@ -13,7 +13,7 @@ public class ManageLocationPage {
 	PageUtility pageutility;
 	GeneralUtilities generalutilities;
 	
-	@FindBy(xpath="//li[@class='nav-item']//a[@href='https://groceryapp.uniqassosiates.com/admin/list-location']")
+	@FindBy(xpath="//i[@class='nav-icon fas fa-map-marker']")
 	private WebElement manageLocation;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")
 	private WebElement newOption;
@@ -29,13 +29,15 @@ public class ManageLocationPage {
 	private WebElement saveButton;
 	@FindBy(xpath="//button[@name='create']")
 	private WebElement searchField;
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Location/edit?edit=655&page_ad=1']")
+	@FindBy(xpath="//i[@class='fas fa-edit']")
 	private WebElement editOption;
 	@FindBy(xpath="//button[@name='update']")
 	private WebElement updateButton;
-	@FindBy(xpath="//tbody//tr[2]//td//a[@href='https://groceryapp.uniqassosiates.com/admin/Location/status?id=659&st=inactive&page_ad=1']")
+	@FindBy(xpath="//span[@class='badge bg-success']")
 	private WebElement statusOption;
-	@FindBy(xpath="//tbody//tr[1]//a[@href='https://groceryapp.uniqassosiates.com/admin/Location/delete?del=662&page_ad=1']")
+	@FindBy(xpath="//h5[text()=' Alert!']")
+	private WebElement statusOptionalert;
+	@FindBy(xpath="//i[@class='fas fa-trash-alt']")
 	private WebElement deleteButton;
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Location/delete?del=662&page_ad=1']")
 	private WebElement delete;
@@ -86,10 +88,14 @@ public class ManageLocationPage {
 		searchField.click();
 	}
 	
-	public void select_StateEastMidLands()
+	public void select_StateEastMidLands(String text)
 	{
 		pageutility = new PageUtility(driver);
-		pageutility.select_ByVisisbleText("East Midlands", selectState);
+		pageutility.select_ByVisisbleText(text, selectState);
+	}
+	public void enetre_location_feild(String location)
+	{
+		
 	}
 	public void click_EditOption()
 	{
@@ -103,6 +109,10 @@ public class ManageLocationPage {
 	public void click_OnStatusOption()
 	{
 		 statusOption.click();
+	}
+	public String status_alert_text()
+	{
+		return statusOptionalert.getText();
 	}
 	public void click_DeleteButton()
 	{

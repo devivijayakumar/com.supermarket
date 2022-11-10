@@ -30,7 +30,7 @@ public class ManageOrderTest  extends Base {
 		manageorderepage.enter_Status();
 		manageorderepage.click_OnSearchButton();
 		manageorderepage.searchButton_Enabled();
-			Assert.assertTrue(	manageorderepage.searchButton_Enabled());
+		Assert.assertTrue(	manageorderepage.searchButton_Enabled());
 	}
 	@Test
 	public void verify_ResetListOrders()

@@ -14,6 +14,11 @@ public class Constants {
 	public static final String EXPECTED_NEW_TIMESTAMP_ALERT_TEXT="Alert!";
 	public static final String EXPECTED_BACKGROUND_COLOR="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
 	public static final String EXPECTED_ALERT_BACKGROUND_COLOR="rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
+	public static final String EXPECTED_EDIT_ALERT_BACKGROUND_COLOR="rgb(220, 53, 69) none repeat scroll 0% 0% / auto padding-box border-box";
+	public static final String EXPECTED_SEARCH_BY_NAME_TEXT="Paddy";
+	public static final String EXPECTED_SEARCH_BY_EMAIL_TEXT="devi1232@gmail.com";
+	public static final String EXPECTED_SEARCH_BY_PHONENUMBER_TEXT="9632587410";
+	//public static final String EXPECTED_TIMESTAMP_TEXT=(//table/tbody/tr[1]/td[1].gettext
 	/**manageexpense**/
 	public static final String EXPECTED_NEW_BUTTON_ALERT_BACKGROUND_COLOR= "rgb(220, 53, 69) none repeat scroll 0% 0% / auto padding-box border-box";
 	public static final String EXPECTED_EDIT_BUTTON_ALERT_BACKGROUND_COLOR= "rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
@@ -28,18 +33,19 @@ public class Constants {
 	public static final String EXPECTED_SUB_IMAGE_UPLOAD=System.getProperty("user.dir")+"\\src\\main\\resources\\ImagesUpload\\wheategrain.jpg";
 	
 	/**manageorderpage**/
-	public static final String EXPECTED_ORDERID_LISTORDER="406";
+	public static final String EXPECTED_ORDERID_LISTORDER="403";
 	
 	/**MANAGESLIDERPAGE**/
 	public static final String IMAGEUPLOAD_MANAGESLIDE=System.getProperty("user.dir")+"\\src\\main\\resources\\ImagesUpload\\grocery.jpg"; 
 	
 	/**manageoffercodepage**/
 	public static final String IMAGEUPLOAD_MANAGEOFFER_CODE=System.getProperty("user.dir")+"\\src\\main\\resources\\ImagesUpload\\veggies.jpg";
-	public static final String EXPECTED_SUCESSS_ALERT="alert alert-sucess alert-dismissible";
+	public static final String EXPECTED_SUCESSS_ALERT="alert alert-success alert-dismissible";
 	
 	/**mobilesliderpage**/
 	public static final String IMAGEUPLOAD_MOBILE_SLIDER=System.getProperty("user.dir")+"\\src\\main\\resources\\ImagesUpload\\bakery.jpg";
 	
 	/**managelocationpage**/
 	public static final String EXPECTED_ALERTFOR_DELETE="Do you want to delete this location";
+	public static final String EXPECTED_STATUS_ALERT_TEXT="Alert!";
 }

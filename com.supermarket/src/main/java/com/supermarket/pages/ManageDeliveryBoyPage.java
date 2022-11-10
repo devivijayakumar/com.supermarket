@@ -56,24 +56,32 @@ public class ManageDeliveryBoyPage {
 	private WebElement searchbyphonenumber;
 	@FindBy(xpath = "//button[@class='btn btn-block-sm btn-danger']")
 	private WebElement searchsearch;
-	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/Deliveryboy/edit?edit=427&page_ad=1']")
+	@FindBy(xpath = "//i[@class='fas fa-edit']")
 	private WebElement editbutton;
 	@FindBy(xpath = "//input[@id='name']")
 	private WebElement editname;
+	@FindBy(xpath = "//input[@id='username']")
+	private WebElement editusername;
+	@FindBy(xpath = "//input[@id='password']")
+	private WebElement editpassword;
 	@FindBy(xpath = "//button[@class='btn btn-danger']")
 	private WebElement updatebutton;
-	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	private WebElement alertmessagecolor;
+	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+	private WebElement alertmessagebackgroundcolor;
 	@FindBy(xpath = "//a[@class='btn btn-sm btn btn-danger btncss']")
 	private WebElement editdelete;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement editdeletecolor;
-	@FindBy(xpath = "//table/tbody/tr[3]/td[6]")
+	@FindBy(xpath = "//span[@class='badge bg-success']")
 	private WebElement activestatus;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement statusalert;
 	@FindBy(xpath = "//table/tbody/tr[1]/td[1]")
 	private WebElement searchnameactaul;
+	@FindBy(xpath = "//table/tbody/tr[1]/td[2]")
+	private WebElement searchemailactaul;
+	@FindBy(xpath = "//table/tbody/tr[1]/td[3]")
+	private WebElement searchphoneactaul;
 
 	public ManageDeliveryBoyPage(WebDriver driver) {
 		this.driver = driver;
@@ -149,9 +157,15 @@ public class ManageDeliveryBoyPage {
 	public void enter_search_email(String email) {
 		searchbyemail.sendKeys(email);
 	}
+	public String table_email() {
+		return searchemailactaul.getText();
+	}
 
 	public void enetr_search_phonenumber(String number) {
 		searchbyphonenumber.sendKeys(number);
+	}
+	public String table_phonenumber() {
+		return searchphoneactaul.getText();
 	}
 
 	public void click_searchSearch() {
@@ -164,30 +178,35 @@ public class ManageDeliveryBoyPage {
 
 	}
 
-	public String get_attribute_searchresult() {
-		generalutilities = new GeneralUtilities(driver);
-		return searchtableresult.getAttribute("value");
-		
-	}
-
 	public void click_editOption() {
 		editbutton.click();
 	}
 
-	public void verify_editNmae() throws AWTException {
+	public void enter_editName(String name) throws AWTException {
 		pageutility = new PageUtility(driver);
 		pageutility.keyboard_interaction(editname);
-		editname.sendKeys("nameuser");
+		editname.sendKeys(name);
 	}
-
+	public void enter_editUserName(String user) throws AWTException
+	{
+		pageutility = new PageUtility(driver);
+		pageutility.keyboard_interaction(editusername);
+		editusername.sendKeys(user);
+	}
+	public void enter_editPassword(String passwrd) throws AWTException
+	{
+		pageutility = new PageUtility(driver);
+		pageutility.keyboard_interaction(editpassword);
+		editpassword.sendKeys(passwrd);
+	}
 	public void click_updateButton() {
 		pageutility = new PageUtility(driver);
 		pageutility.scroll_and_click(updatebutton);
 	}
 
-	public String update_alert_message() {
+	public String background_edit_alert_message() {
 		generalutilities = new GeneralUtilities(driver);
-		return alertmessagecolor.getCssValue("background");
+		return alertmessagebackgroundcolor.getCssValue("background");
 	}
 
 	public void editOption_delete_button() {
@@ -201,12 +220,18 @@ public class ManageDeliveryBoyPage {
 	}
 
 	public void status_click() {
-		activestatus.click();
+		pageutility = new PageUtility(driver);
+		pageutility.scroll_and_click(activestatus);
+		
 	}
 
 	public String status_alert() {
 		generalutilities = new GeneralUtilities(driver);
 		return statusalert.getCssValue("background");
+	}
+	public boolean timestamp_get_text_matched(String expectedText )
+	{
+		return searchbyname.getText().equals(expectedText);
 	}
 
 }

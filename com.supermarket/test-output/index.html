@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-942419939\testng-customsuite.xml</span>
+                    <span>C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-1229542350\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ManageOfferCodeTest" class="method navigator-link" hash-for-method="verify_SearchOfferCodes(TRYNEW20)">verify_SearchOfferCodes(TRYNEW20)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.supermarket.tests.ManageLocationTest" class="method navigator-link" hash-for-method="verify_EnterLocationInformations">verify_EnterLocationInformations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.supermarket.tests.ManageLocationTest" class="method navigator-link" hash-for-method="verify_StatusChangeOption">verify_StatusChangeOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.supermarket.tests.ManageLocationTest" class="method navigator-link" hash-for-method="verify_UpDateLocationInformations">verify_UpDateLocationInformations</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,15 +132,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ManageOfferCodeTest</span>
+              <span class="class-name">com.supermarket.tests.ManageLocationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_SearchOfferCodes(TRYNEW20)">
-                  </a> <!-- verify_SearchOfferCodes(TRYNEW20) -->
-                  <span class="method-name">verify_SearchOfferCodes</span>
-                  <span class="parameters">(TRYNEW20)</span>
+                  <a name="verify_EnterLocationInformations">
+                  </a> <!-- verify_EnterLocationInformations -->
+                  <span class="method-name">verify_EnterLocationInformations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_StatusChangeOption">
+                  </a> <!-- verify_StatusChangeOption -->
+                  <span class="method-name">verify_StatusChangeOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_UpDateLocationInformations">
+                  </a> <!-- verify_UpDateLocationInformations -->
+                  <span class="method-name">verify_UpDateLocationInformations</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -138,7 +161,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-942419939\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-1229542350\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,11 +170,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ManageOfferCodeTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;verify_SearchOfferCodes&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- ManageOfferCodeTest --&gt;
+      &lt;class name=&quot;com.supermarket.tests.ManageLocationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -191,16 +210,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verify_SearchOfferCodes')
-data.setCell(0, 2, 'ManageOfferCodeTest')
-data.setCell(0, 3, 3842);
+data.setCell(0, 1, 'verify_EnterLocationInformations')
+data.setCell(0, 2, 'com.supermarket.tests.ManageLocationTest')
+data.setCell(0, 3, 4795);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_UpDateLocationInformations')
+data.setCell(1, 2, 'com.supermarket.tests.ManageLocationTest')
+data.setCell(1, 3, 3932);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verify_StatusChangeOption')
+data.setCell(2, 2, 'com.supermarket.tests.ManageLocationTest')
+data.setCell(2, 3, 2886);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -215,16 +242,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">ManageOfferCodeTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verify_EnterOfferInformations</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -233,18 +253,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ManageOfferCodeTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.supermarket.tests.ManageLocationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verify_SearchOfferCodes(TRYNEW20)</span>
-                <span class="method-start">7528 ms</span>
+                <span class="method-name">verify_EnterLocationInformations</span>
+                <span class="method-start">5967 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verify_SearchOfferCodes status=SUCCESS method=ManageOfferCodeTest.verify_SearchOffe...)</span>
-                <span class="method-start">11377 ms</span>
+                <span class="method-name">tearDown([TestResult name=verify_EnterLocationInformations status=SUCCESS method=ManageLocationTest.verify_En...)</span>
+                <span class="method-start">10766 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10769 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_StatusChangeOption</span>
+                <span class="method-start">13576 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_StatusChangeOption status=SUCCESS method=ManageLocationTest.verify_StatusCha...)</span>
+                <span class="method-start">16463 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16465 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_UpDateLocationInformations</span>
+                <span class="method-start">19468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_UpDateLocationInformations status=SUCCESS method=ManageLocationTest.verify_U...)</span>
+                <span class="method-start">23403 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

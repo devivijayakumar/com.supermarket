@@ -36,9 +36,11 @@ public class ManageLocationTest extends Base {
 		managelocationpage = new ManageLocationPage(driver);
 		managelocationpage.click_MnageLocationPage();
 		managelocationpage.click_EditOption();
-		managelocationpage.select_StateEastMidLands();
-		managelocationpage.click_UpdateButton();
-
+		managelocationpage.select_StateEastMidLands("East Midlands");
+		managelocationpage.enter_Location("Rutland");
+		managelocationpage.enter_DeliveryCharge("250");
+		managelocationpage.click_saveButton();
+		Assert.assertTrue(managelocationpage.saveButton_Enabled());
 	}
 
 	@Test
@@ -48,22 +50,12 @@ public class ManageLocationTest extends Base {
 		managelocationpage = new ManageLocationPage(driver);
 		managelocationpage.click_MnageLocationPage();
 		managelocationpage.click_OnStatusOption();
+		String actualresult=managelocationpage.status_alert_text();
+		String expectedresult=Constants.EXPECTED_STATUS_ALERT_TEXT;
+		Assert.assertEquals(actualresult, expectedresult);
 
 	}
 
-	@Test
-	public void verify_DeleteOption() {
-		loginpage = new LoginPage(driver);
-		loginpage.login();loginpage = new LoginPage(driver);
-		loginpage.login();
-		managelocationpage = new ManageLocationPage(driver);
-		managelocationpage.click_MnageLocationPage();
-		managelocationpage.click_DeleteButton();
-		String actualalert = driver.switchTo().alert().getText();
-		driver.switchTo().alert().accept();
-		String expectedalert = Constants.EXPECTED_ALERTFOR_DELETE;
-		Assert.assertEquals(actualalert, expectedalert);
-
-	}
+	
 
 }

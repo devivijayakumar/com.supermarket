@@ -10,14 +10,6 @@ import com.supermarket.pages.LoginPage;
 public class LoginTest extends Base {
 	LoginPage loginpage;
 	
-	@Test(groups = "smoke")
-	public void verify_login()
-	{
-		loginpage= new LoginPage(driver);
-		loginpage.login();
-		
-		
-	}
 	@Test(groups ="sanity")
 	public void verify_profile_image()
 	{
