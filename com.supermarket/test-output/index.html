@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Regression_build_run" class="navigator-link">
+              <span class="suite-name border-failed">Regression build run</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-1229542350\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Regression_build_run" class="navigator-link ">
+                    <span>C:\Users\lenovo\git\com.supermarket\com.supermarket\src\main\resources\XmlFiles\AllTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-Regression_build_run" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                  <a href="#" panel-name="group-Regression_build_run" class="navigator-link ">
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Regression_build_run" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Regression_build_run" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Regression_build_run" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Regression_build_run" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,31 +93,185 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">32 methods, 6 failed,   26 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_build_run" class="hide-methods failed suite-Regression_build_run"> (hide)</a> <!-- hide-methods failed suite-Regression_build_run -->
+                      <a href="#" panel-name="suite-Regression_build_run" class="show-methods failed suite-Regression_build_run"> (show)</a> <!-- show-methods failed suite-Regression_build_run -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression_build_run">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageOfferCodeTest" class="method navigator-link" hash-for-method="verify_EnterOfferInformations">verify_EnterOfferInformations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageExpenseTest" class="method navigator-link" hash-for-method="verify_Manage_expense_new">verify_Manage_expense_new</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageProductTest" class="method navigator-link" hash-for-method="verify_create_new_product(wheat, grocery, 5, 15, 335, 340, 51, 670, high quality wheat)">verify_create_new_product(wheat, grocery, 5, 15, 335, 340, 51, 670, high quality wheat)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageExpenseTest" class="method navigator-link" hash-for-method="verify_editbutton">verify_editbutton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageExpenseTest" class="method navigator-link" hash-for-method="verify_newButton">verify_newButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verify_new_deliveryBoy_creation">verify_new_deliveryBoy_creation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_build_run -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Regression_build_run" class="hide-methods passed suite-Regression_build_run"> (hide)</a> <!-- hide-methods passed suite-Regression_build_run -->
+                      <a href="#" panel-name="suite-Regression_build_run" class="show-methods passed suite-Regression_build_run"> (show)</a> <!-- show-methods passed suite-Regression_build_run -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Regression_build_run">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.supermarket.tests.ManageLocationTest" class="method navigator-link" hash-for-method="verify_EnterLocationInformations">verify_EnterLocationInformations</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.MobileSliderTest" class="method navigator-link" hash-for-method="verify_AddingNewListOfMobileSlider">verify_AddingNewListOfMobileSlider</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.supermarket.tests.ManageLocationTest" class="method navigator-link" hash-for-method="verify_StatusChangeOption">verify_StatusChangeOption</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageOrderTest" class="method navigator-link" hash-for-method="verify_DetailsOfOrderId406">verify_DetailsOfOrderId406</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.supermarket.tests.ManageLocationTest" class="method navigator-link" hash-for-method="verify_UpDateLocationInformations">verify_UpDateLocationInformations</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageSliderTest" class="method navigator-link" hash-for-method="verify_EnterLocationInformations">verify_EnterLocationInformations</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageLocationTest" class="method navigator-link" hash-for-method="verify_EnterLocationInformations">verify_EnterLocationInformations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.PushNotificationTest" class="method navigator-link" hash-for-method="verify_PushNotification">verify_PushNotification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageOrderTest" class="method navigator-link" hash-for-method="verify_ResetListOrders">verify_ResetListOrders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageOrderTest" class="method navigator-link" hash-for-method="verify_SearchListOrders">verify_SearchListOrders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageOfferCodeTest" class="method navigator-link" hash-for-method="verify_SearchOfferCodes(TRYNEW20)">verify_SearchOfferCodes(TRYNEW20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageLocationTest" class="method navigator-link" hash-for-method="verify_StatusChangeOption">verify_StatusChangeOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.MobileSliderTest" class="method navigator-link" hash-for-method="verify_StatusOptionForListOfMobileSlider">verify_StatusOptionForListOfMobileSlider</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageLocationTest" class="method navigator-link" hash-for-method="verify_UpDateLocationInformations">verify_UpDateLocationInformations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageOrderTest" class="method navigator-link" hash-for-method="verify_ViewOption">verify_ViewOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verify_create_delivery_boy">verify_create_delivery_boy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageExpenseTest" class="method navigator-link" hash-for-method="verify_deleteButton">verify_deleteButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verify_deleteButton_editOption">verify_deleteButton_editOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verify_edit_option">verify_edit_option</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageExpenseTest" class="method navigator-link" hash-for-method="verify_manageExpenseCategory_search">verify_manageExpenseCategory_search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.LoginTest" class="method navigator-link" hash-for-method="verify_profile_image">verify_profile_image</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageExpenseTest" class="method navigator-link" hash-for-method="verify_searchButton">verify_searchButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verify_search_byEmail">verify_search_byEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verify_search_byName">verify_search_byName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verify_search_byPhonenumber">verify_search_byPhonenumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageProductTest" class="method navigator-link" hash-for-method="verify_search_functionality">verify_search_functionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verify_status">verify_status</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.LoginTest" class="method navigator-link" hash-for-method="verify_textcolor_admin">verify_textcolor_admin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_build_run" title="com.supermarket.tests.ManageUserTest" class="method navigator-link" hash-for-method="verify_user_deactivation">verify_user_deactivation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression_build_run -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -128,8 +282,496 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Regression_build_run" class="panel Regression_build_run">
+          <div class="suite-Regression_build_run-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.supermarket.tests.ManageProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_create_new_product(wheat, grocery, 5, 15, 335, 340, 51, 670, high quality wheat)">
+                  </a> <!-- verify_create_new_product(wheat, grocery, 5, 15, 335, 340, 51, 670, high quality wheat) -->
+                  <span class="method-name">verify_create_new_product</span>
+                  <span class="parameters">(wheat, grocery, 5, 15, 335, 340, 51, 670, high quality wheat)</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-KFM2KDI1&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efb16396d47a17210d24f2c71df188d2, findChildElements {id=c6200c77-fc43-4073-a3c1-f59d3035dcb9, using=xpath, value=.//option[normalize-space(.) = &quot;wheat&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60867/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: efb16396d47a17210d24f2c71df188d2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:402)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:219)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.findElements(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:114)
+	at com.supermarket.utilities.PageUtility.select_ByVisisbleText(PageUtility.java:35)
+	at com.supermarket.pages.ManageProductPage.click_Subcategory_dropDown(ManageProductPage.java:122)
+	at com.supermarket.tests.ManageProductTest.verify_create_new_product(ManageProductTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-failed -->
+          <div class="suite-Regression_build_run-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.supermarket.tests.ManageDeliveryBoyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_new_deliveryBoy_creation">
+                  </a> <!-- verify_new_deliveryBoy_creation -->
+                  <span class="method-name">verify_new_deliveryBoy_creation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.supermarket.tests.ManageDeliveryBoyTest.verify_new_deliveryBoy_creation(ManageDeliveryBoyTest.java:154)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-failed -->
+          <div class="suite-Regression_build_run-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.supermarket.tests.ManageExpenseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Manage_expense_new">
+                  </a> <!-- verify_Manage_expense_new -->
+                  <span class="method-name">verify_Manage_expense_new</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;user_id&apos;]&quot;}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-KFM2KDI1&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc959eda29d97fe791fd4d7a628815a4, findElement {using=xpath, value=//select[@id=&apos;user_id&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61028/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fc959eda29d97fe791fd4d7a628815a4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.supermarket.pages.ManageExpensePage.click_mngexpNew_userDropdown(ManageExpensePage.java:189)
+	at com.supermarket.tests.ManageExpenseTest.verify_Manage_expense_new(ManageExpenseTest.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_editbutton">
+                  </a> <!-- verify_editbutton -->
+                  <span class="method-name">verify_editbutton</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-KFM2KDI1&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8ed78e41926f628ce1ec92cc229d558, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61077}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61077/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8ed78e41926f628ce1ec92cc229d558
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getCssValue(Unknown Source)
+	at com.supermarket.pages.ManageExpensePage.edit_alert_message(ManageExpensePage.java:171)
+	at com.supermarket.tests.ManageExpenseTest.verify_editbutton(ManageExpenseTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_newButton">
+                  </a> <!-- verify_newButton -->
+                  <span class="method-name">verify_newButton</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-KFM2KDI1&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f9e793ea30948e8c5e276c9e69c7864, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61124/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f9e793ea30948e8c5e276c9e69c7864
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getCssValue(Unknown Source)
+	at com.supermarket.pages.ManageExpensePage.new_alert_message(ManageExpensePage.java:160)
+	at com.supermarket.tests.ManageExpenseTest.verify_newButton(ManageExpenseTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-failed -->
+          <div class="suite-Regression_build_run-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.supermarket.tests.ManageOfferCodeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_EnterOfferInformations">
+                  </a> <!-- verify_EnterOfferInformations -->
+                  <span class="method-name">verify_EnterOfferInformations</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-KFM2KDI1&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4418044016384810956031570bbc47c9, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60959/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4418044016384810956031570bbc47c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getAttribute(Unknown Source)
+	at com.supermarket.utilities.GeneralUtilities.get_Attribute(GeneralUtilities.java:57)
+	at com.supermarket.pages.ManageOfferCodePage.get_SucessAlert(ManageOfferCodePage.java:98)
+	at com.supermarket.tests.ManageOfferCodeTest.verify_EnterOfferInformations(ManageOfferCodeTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-failed -->
+          <div class="suite-Regression_build_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.supermarket.tests.ManageProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_search_functionality">
+                  </a> <!-- verify_search_functionality -->
+                  <span class="method-name">verify_search_functionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-passed -->
+          <div class="suite-Regression_build_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.supermarket.tests.ManageUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_user_deactivation">
+                  </a> <!-- verify_user_deactivation -->
+                  <span class="method-name">verify_user_deactivation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-passed -->
+          <div class="suite-Regression_build_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.supermarket.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_profile_image">
+                  </a> <!-- verify_profile_image -->
+                  <span class="method-name">verify_profile_image</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_textcolor_admin">
+                  </a> <!-- verify_textcolor_admin -->
+                  <span class="method-name">verify_textcolor_admin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-passed -->
+          <div class="suite-Regression_build_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.supermarket.tests.MobileSliderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_AddingNewListOfMobileSlider">
+                  </a> <!-- verify_AddingNewListOfMobileSlider -->
+                  <span class="method-name">verify_AddingNewListOfMobileSlider</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_StatusOptionForListOfMobileSlider">
+                  </a> <!-- verify_StatusOptionForListOfMobileSlider -->
+                  <span class="method-name">verify_StatusOptionForListOfMobileSlider</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-passed -->
+          <div class="suite-Regression_build_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.supermarket.tests.ManageExpenseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_deleteButton">
+                  </a> <!-- verify_deleteButton -->
+                  <span class="method-name">verify_deleteButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_manageExpenseCategory_search">
+                  </a> <!-- verify_manageExpenseCategory_search -->
+                  <span class="method-name">verify_manageExpenseCategory_search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_searchButton">
+                  </a> <!-- verify_searchButton -->
+                  <span class="method-name">verify_searchButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-passed -->
+          <div class="suite-Regression_build_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.supermarket.tests.ManageDeliveryBoyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_create_delivery_boy">
+                  </a> <!-- verify_create_delivery_boy -->
+                  <span class="method-name">verify_create_delivery_boy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_deleteButton_editOption">
+                  </a> <!-- verify_deleteButton_editOption -->
+                  <span class="method-name">verify_deleteButton_editOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_edit_option">
+                  </a> <!-- verify_edit_option -->
+                  <span class="method-name">verify_edit_option</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_search_byEmail">
+                  </a> <!-- verify_search_byEmail -->
+                  <span class="method-name">verify_search_byEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_search_byName">
+                  </a> <!-- verify_search_byName -->
+                  <span class="method-name">verify_search_byName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_search_byPhonenumber">
+                  </a> <!-- verify_search_byPhonenumber -->
+                  <span class="method-name">verify_search_byPhonenumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_status">
+                  </a> <!-- verify_status -->
+                  <span class="method-name">verify_status</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-passed -->
+          <div class="suite-Regression_build_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.supermarket.tests.ManageSliderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_EnterLocationInformations">
+                  </a> <!-- verify_EnterLocationInformations -->
+                  <span class="method-name">verify_EnterLocationInformations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-passed -->
+          <div class="suite-Regression_build_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.supermarket.tests.ManageOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_DetailsOfOrderId406">
+                  </a> <!-- verify_DetailsOfOrderId406 -->
+                  <span class="method-name">verify_DetailsOfOrderId406</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_ResetListOrders">
+                  </a> <!-- verify_ResetListOrders -->
+                  <span class="method-name">verify_ResetListOrders</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_SearchListOrders">
+                  </a> <!-- verify_SearchListOrders -->
+                  <span class="method-name">verify_SearchListOrders</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_ViewOption">
+                  </a> <!-- verify_ViewOption -->
+                  <span class="method-name">verify_ViewOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-passed -->
+          <div class="suite-Regression_build_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.supermarket.tests.PushNotificationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_PushNotification">
+                  </a> <!-- verify_PushNotification -->
+                  <span class="method-name">verify_PushNotification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-passed -->
+          <div class="suite-Regression_build_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.supermarket.tests.ManageOfferCodeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_SearchOfferCodes(TRYNEW20)">
+                  </a> <!-- verify_SearchOfferCodes(TRYNEW20) -->
+                  <span class="method-name">verify_SearchOfferCodes</span>
+                  <span class="parameters">(TRYNEW20)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_build_run-class-passed -->
+          <div class="suite-Regression_build_run-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.supermarket.tests.ManageLocationTest</span>
@@ -157,138 +799,840 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Regression_build_run-class-passed -->
+        </div> <!-- panel Regression_build_run -->
+        <div panel-name="test-xml-Regression_build_run" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-1229542350\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\lenovo\git\com.supermarket\com.supermarket\src\main\resources\XmlFiles\AllTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Regression build run&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.supermarket.listeners.ExtentReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Run Module1&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.supermarket.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.supermarket.tests.ManageDeliveryBoyTest&quot;/&gt;
+      &lt;class name=&quot;com.supermarket.tests.ManageExpenseTest&quot;/&gt;
       &lt;class name=&quot;com.supermarket.tests.ManageLocationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Run Module1 --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Run Module2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.supermarket.tests.ManageOfferCodeTest&quot;/&gt;
+      &lt;class name=&quot;com.supermarket.tests.ManageOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.supermarket.tests.ManageProductTest&quot;/&gt;
+      &lt;class name=&quot;com.supermarket.tests.ManageSliderTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run Module2 --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Run Module3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.supermarket.tests.ManageUserTest&quot;/&gt;
+      &lt;class name=&quot;com.supermarket.tests.MobileSliderTest&quot;/&gt;
+      &lt;class name=&quot;com.supermarket.tests.PushNotificationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run Module3 --&gt;
+&lt;/suite&gt; &lt;!-- Regression build run --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Regression_build_run" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Regression build run</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Run Module1 (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Run Module2 (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Run Module3 (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Regression_build_run" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Regression build run</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_AddingNewListOfMobileSlider</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_profile_image</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_search_byName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_search_byPhonenumber</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_EnterLocationInformations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_PushNotification</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_StatusOptionForListOfMobileSlider</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_search_byPhonenumber</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Regression_build_run" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Regression build run</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Regression_build_run');
+function tableData_Regression_build_run() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(32);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verify_EnterLocationInformations')
-data.setCell(0, 2, 'com.supermarket.tests.ManageLocationTest')
-data.setCell(0, 3, 4795);
+data.setCell(0, 1, 'verify_EnterOfferInformations')
+data.setCell(0, 2, 'com.supermarket.tests.ManageOfferCodeTest')
+data.setCell(0, 3, 17205);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_UpDateLocationInformations')
-data.setCell(1, 2, 'com.supermarket.tests.ManageLocationTest')
-data.setCell(1, 3, 3932);
+data.setCell(1, 1, 'verify_editbutton')
+data.setCell(1, 2, 'com.supermarket.tests.ManageExpenseTest')
+data.setCell(1, 3, 13622);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_StatusChangeOption')
-data.setCell(2, 2, 'com.supermarket.tests.ManageLocationTest')
-data.setCell(2, 3, 2886);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(2, 1, 'verify_newButton')
+data.setCell(2, 2, 'com.supermarket.tests.ManageExpenseTest')
+data.setCell(2, 3, 13440);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verify_Manage_expense_new')
+data.setCell(3, 2, 'com.supermarket.tests.ManageExpenseTest')
+data.setCell(3, 3, 12312);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verify_create_delivery_boy')
+data.setCell(4, 2, 'com.supermarket.tests.ManageDeliveryBoyTest')
+data.setCell(4, 3, 10554);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verify_new_deliveryBoy_creation')
+data.setCell(5, 2, 'com.supermarket.tests.ManageDeliveryBoyTest')
+data.setCell(5, 3, 8451);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verify_create_new_product')
+data.setCell(6, 2, 'com.supermarket.tests.ManageProductTest')
+data.setCell(6, 3, 8348);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verify_ResetListOrders')
+data.setCell(7, 2, 'com.supermarket.tests.ManageOrderTest')
+data.setCell(7, 3, 7388);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verify_edit_option')
+data.setCell(8, 2, 'com.supermarket.tests.ManageDeliveryBoyTest')
+data.setCell(8, 3, 6928);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verify_SearchListOrders')
+data.setCell(9, 2, 'com.supermarket.tests.ManageOrderTest')
+data.setCell(9, 3, 6157);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verify_user_deactivation')
+data.setCell(10, 2, 'com.supermarket.tests.ManageUserTest')
+data.setCell(10, 3, 6087);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verify_PushNotification')
+data.setCell(11, 2, 'com.supermarket.tests.PushNotificationTest')
+data.setCell(11, 3, 6087);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verify_DetailsOfOrderId406')
+data.setCell(12, 2, 'com.supermarket.tests.ManageOrderTest')
+data.setCell(12, 3, 6041);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verify_ViewOption')
+data.setCell(13, 2, 'com.supermarket.tests.ManageOrderTest')
+data.setCell(13, 3, 5742);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verify_EnterLocationInformations')
+data.setCell(14, 2, 'com.supermarket.tests.ManageSliderTest')
+data.setCell(14, 3, 5499);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verify_AddingNewListOfMobileSlider')
+data.setCell(15, 2, 'com.supermarket.tests.MobileSliderTest')
+data.setCell(15, 3, 5277);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verify_search_functionality')
+data.setCell(16, 2, 'com.supermarket.tests.ManageProductTest')
+data.setCell(16, 3, 5048);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verify_StatusOptionForListOfMobileSlider')
+data.setCell(17, 2, 'com.supermarket.tests.MobileSliderTest')
+data.setCell(17, 3, 4880);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verify_EnterLocationInformations')
+data.setCell(18, 2, 'com.supermarket.tests.ManageLocationTest')
+data.setCell(18, 3, 4580);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verify_profile_image')
+data.setCell(19, 2, 'com.supermarket.tests.LoginTest')
+data.setCell(19, 3, 4333);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verify_manageExpenseCategory_search')
+data.setCell(20, 2, 'com.supermarket.tests.ManageExpenseTest')
+data.setCell(20, 3, 4321);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verify_search_byEmail')
+data.setCell(21, 2, 'com.supermarket.tests.ManageDeliveryBoyTest')
+data.setCell(21, 3, 4143);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verify_textcolor_admin')
+data.setCell(22, 2, 'com.supermarket.tests.LoginTest')
+data.setCell(22, 3, 4111);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verify_UpDateLocationInformations')
+data.setCell(23, 2, 'com.supermarket.tests.ManageLocationTest')
+data.setCell(23, 3, 3785);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verify_deleteButton_editOption')
+data.setCell(24, 2, 'com.supermarket.tests.ManageDeliveryBoyTest')
+data.setCell(24, 3, 3686);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verify_search_byPhonenumber')
+data.setCell(25, 2, 'com.supermarket.tests.ManageDeliveryBoyTest')
+data.setCell(25, 3, 3534);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verify_search_byName')
+data.setCell(26, 2, 'com.supermarket.tests.ManageDeliveryBoyTest')
+data.setCell(26, 3, 3523);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verify_deleteButton')
+data.setCell(27, 2, 'com.supermarket.tests.ManageExpenseTest')
+data.setCell(27, 3, 3522);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verify_SearchOfferCodes')
+data.setCell(28, 2, 'com.supermarket.tests.ManageOfferCodeTest')
+data.setCell(28, 3, 3387);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verify_StatusChangeOption')
+data.setCell(29, 2, 'com.supermarket.tests.ManageLocationTest')
+data.setCell(29, 3, 2949);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verify_status')
+data.setCell(30, 2, 'com.supermarket.tests.ManageDeliveryBoyTest')
+data.setCell(30, 3, 2903);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verify_searchButton')
+data.setCell(31, 2, 'com.supermarket.tests.ManageExpenseTest')
+data.setCell(31, 3, 2802);
+window.suiteTableData['Regression_build_run']= { tableData: data, tableDiv: 'times-div-Regression_build_run'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Regression_build_run">
+              </div> <!-- times-div-Regression_build_run -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Regression_build_run" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Regression build run</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Regression_build_run" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Regression_build_run" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.supermarket.tests.ManageLocationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.supermarket.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">verify_user_deactivation</span>
+                <span class="method-start">13676 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_DetailsOfOrderId406</span>
+                <span class="method-start">13927 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_profile_image</span>
+                <span class="method-start">13991 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_profile_image status=SUCCESS method=LoginTest.verify_profile_image()[pri:0, ...)</span>
+                <span class="method-start">18343 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_user_deactivation status=SUCCESS method=ManageUserTest.verify_user_deactivat...)</span>
+                <span class="method-start">19764 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_DetailsOfOrderId406 status=SUCCESS method=ManageOrderTest.verify_DetailsOfOr...)</span>
+                <span class="method-start">19971 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20150 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageSliderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20503 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.MobileSliderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20696 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_textcolor_admin</span>
+                <span class="method-start">24645 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageSliderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
                 <span class="method-name">verify_EnterLocationInformations</span>
-                <span class="method-start">5967 ms</span>
+                <span class="method-start">25612 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.MobileSliderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_AddingNewListOfMobileSlider</span>
+                <span class="method-start">26307 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_textcolor_admin status=SUCCESS method=LoginTest.verify_textcolor_admin()[pri...)</span>
+                <span class="method-start">28757 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageSliderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_EnterLocationInformations status=SUCCESS method=ManageSliderTest.verify_Ente...)</span>
+                <span class="method-start">31112 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">31190 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.MobileSliderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_AddingNewListOfMobileSlider status=SUCCESS method=MobileSliderTest.verify_Ad...)</span>
+                <span class="method-start">31586 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32233 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32906 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_create_delivery_boy</span>
+                <span class="method-start">36802 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.MobileSliderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_StatusOptionForListOfMobileSlider</span>
+                <span class="method-start">38375 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_ResetListOrders</span>
+                <span class="method-start">38497 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.MobileSliderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_StatusOptionForListOfMobileSlider status=SUCCESS method=MobileSliderTest.ver...)</span>
+                <span class="method-start">43257 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.PushNotificationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">44039 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_ResetListOrders status=SUCCESS method=ManageOrderTest.verify_ResetListOrders...)</span>
+                <span class="method-start">45887 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">46418 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_create_delivery_boy status=SUCCESS method=ManageDeliveryBoyTest.verify_creat...)</span>
+                <span class="method-start">47358 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.PushNotificationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_PushNotification</span>
+                <span class="method-start">48163 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">48729 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_SearchListOrders</span>
+                <span class="method-start">50157 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_deleteButton_editOption</span>
+                <span class="method-start">53207 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.PushNotificationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_PushNotification status=SUCCESS method=PushNotificationTest.verify_PushNotif...)</span>
+                <span class="method-start">54257 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_SearchListOrders status=SUCCESS method=ManageOrderTest.verify_SearchListOrde...)</span>
+                <span class="method-start">56315 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOfferCodeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">56642 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_deleteButton_editOption status=SUCCESS method=ManageDeliveryBoyTest.verify_d...)</span>
+                <span class="method-start">56895 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">57212 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOfferCodeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_SearchOfferCodes(TRYNEW20)</span>
+                <span class="method-start">59993 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_edit_option</span>
+                <span class="method-start">60796 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOfferCodeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_SearchOfferCodes status=SUCCESS method=ManageOfferCodeTest.verify_SearchOffe...)</span>
+                <span class="method-start">63382 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">63496 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_ViewOption</span>
+                <span class="method-start">66644 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_edit_option status=SUCCESS method=ManageDeliveryBoyTest.verify_edit_option()...)</span>
+                <span class="method-start">67737 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">68197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_new_deliveryBoy_creation</span>
+                <span class="method-start">71437 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_ViewOption status=SUCCESS method=ManageOrderTest.verify_ViewOption()[pri:0, ...)</span>
+                <span class="method-start">72388 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">72893 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_create_new_product(wheat, grocery, 5, 15, 335, 340, 51, 670, high quality wheat)</span>
+                <span class="method-start">76685 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_new_deliveryBoy_creation status=FAILURE method=ManageDeliveryBoyTest.verify_...)</span>
+                <span class="method-start">79891 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">80464 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_create_new_product status=FAILURE method=ManageProductTest.verify_create_new...)</span>
+                <span class="method-start">85111 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_search_byEmail</span>
+                <span class="method-start">85432 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">85877 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_search_functionality</span>
+                <span class="method-start">89381 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_search_byEmail status=SUCCESS method=ManageDeliveryBoyTest.verify_search_byE...)</span>
+                <span class="method-start">89576 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">90147 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_search_byName</span>
+                <span class="method-start">93131 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_search_functionality status=SUCCESS method=ManageProductTest.verify_search_f...)</span>
+                <span class="method-start">94431 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOfferCodeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">94681 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_search_byName status=SUCCESS method=ManageDeliveryBoyTest.verify_search_byNa...)</span>
+                <span class="method-start">96656 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">96991 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOfferCodeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_EnterOfferInformations</span>
+                <span class="method-start">98640 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_search_byPhonenumber</span>
+                <span class="method-start">100061 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_search_byPhonenumber status=SUCCESS method=ManageDeliveryBoyTest.verify_sear...)</span>
+                <span class="method-start">103596 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">103974 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_status</span>
+                <span class="method-start">106669 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_status status=SUCCESS method=ManageDeliveryBoyTest.verify_status()[pri:0, in...)</span>
+                <span class="method-start">109572 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageExpenseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">109842 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_Manage_expense_new</span>
+                <span class="method-start">112467 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageOfferCodeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_EnterOfferInformations status=FAILURE method=ManageOfferCodeTest.verify_Ente...)</span>
+                <span class="method-start">115852 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageExpenseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_Manage_expense_new status=FAILURE method=ManageExpenseTest.verify_Manage_exp...)</span>
+                <span class="method-start">124809 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">125331 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_deleteButton</span>
+                <span class="method-start">128421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_deleteButton status=SUCCESS method=ManageExpenseTest.verify_deleteButton()[p...)</span>
+                <span class="method-start">131944 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">132418 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_editbutton</span>
+                <span class="method-start">135798 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_editbutton status=FAILURE method=ManageExpenseTest.verify_editbutton()[pri:0...)</span>
+                <span class="method-start">149429 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">149747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_manageExpenseCategory_search</span>
+                <span class="method-start">152583 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_manageExpenseCategory_search status=SUCCESS method=ManageExpenseTest.verify_...)</span>
+                <span class="method-start">156906 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">157137 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_newButton</span>
+                <span class="method-start">160199 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_newButton status=FAILURE method=ManageExpenseTest.verify_newButton()[pri:0, ...)</span>
+                <span class="method-start">173652 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">174069 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_searchButton</span>
+                <span class="method-start">176841 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_searchButton status=SUCCESS method=ManageExpenseTest.verify_searchButton()[p...)</span>
+                <span class="method-start">179644 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.supermarket.tests.ManageLocationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">179961 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_EnterLocationInformations</span>
+                <span class="method-start">182624 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_EnterLocationInformations status=SUCCESS method=ManageLocationTest.verify_En...)</span>
-                <span class="method-start">10766 ms</span>
+                <span class="method-start">187205 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">10769 ms</span>
+                <span class="method-start">187495 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_StatusChangeOption</span>
-                <span class="method-start">13576 ms</span>
+                <span class="method-start">190328 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_StatusChangeOption status=SUCCESS method=ManageLocationTest.verify_StatusCha...)</span>
-                <span class="method-start">16463 ms</span>
+                <span class="method-start">193278 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">16465 ms</span>
+                <span class="method-start">193507 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_UpDateLocationInformations</span>
-                <span class="method-start">19468 ms</span>
+                <span class="method-start">196107 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_UpDateLocationInformations status=SUCCESS method=ManageLocationTest.verify_U...)</span>
-                <span class="method-start">23403 ms</span>
+                <span class="method-start">199895 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

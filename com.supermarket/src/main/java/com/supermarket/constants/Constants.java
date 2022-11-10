@@ -31,7 +31,8 @@ public class Constants {
 	/**managepoduct type**/
 	public static final String EXPECTED_IMAGE_UPLOAD=System.getProperty("user.dir")+"\\src\\main\\resources\\ImagesUpload\\wheat.jpg";
 	public static final String EXPECTED_SUB_IMAGE_UPLOAD=System.getProperty("user.dir")+"\\src\\main\\resources\\ImagesUpload\\wheategrain.jpg";
-	
+	public static final String EXPECTED_ALERT_TEXT="Alert!";
+	public static final String EXPECTED_SEARCH_ALERT_TEXT="wheat P1046 Combo";
 	/**manageorderpage**/
 	public static final String EXPECTED_ORDERID_LISTORDER="403";
 	
@@ -44,7 +45,8 @@ public class Constants {
 	
 	/**mobilesliderpage**/
 	public static final String IMAGEUPLOAD_MOBILE_SLIDER=System.getProperty("user.dir")+"\\src\\main\\resources\\ImagesUpload\\bakery.jpg";
-	
+	public static final String EXPECTED_ALERT_TEXT_MOBILE_SLIDER="Alert!";
+	public static final String EXPECTED_STATUS_CHECK="Inactive";
 	/**managelocationpage**/
 	public static final String EXPECTED_ALERTFOR_DELETE="Do you want to delete this location";
 	public static final String EXPECTED_STATUS_ALERT_TEXT="Alert!";

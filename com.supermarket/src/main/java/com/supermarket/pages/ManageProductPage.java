@@ -69,6 +69,19 @@ public class ManageProductPage {
 	private WebElement radiobuttoncombopack;
 	@FindBy(xpath = "//button[@name='create']")
 	private WebElement savebutton;
+	@FindBy(xpath  ="//h5[text()=' Alert!']")
+	private  WebElement alerttext;
+	@FindBy(xpath  ="//a[@class='btn btn-rounded btn-primary']")
+	private  WebElement searchbutton;
+	@FindBy(xpath  ="//input[@class='form-control']")
+	private  WebElement searchtitle;
+	@FindBy(xpath  ="//i[@class='fa fa-search']")
+	private  WebElement searchsearch;
+	@FindBy(xpath  ="//select[@id='sb']")
+	private  WebElement searchsubcat;
+	@FindBy(xpath  ="//table//tbody//tr[1]//td[1]")
+	private  WebElement searchtable;
+	
 	
 	public ManageProductPage(WebDriver driver) 
 	{
@@ -188,4 +201,32 @@ public class ManageProductPage {
 		pageutility= new PageUtility(driver);
 		pageutility.scroll_and_click(savebutton);
 	}
+	public String alert_text()
+	{
+		return alerttext.getText();
+	}
+	public void click_searcheButton()
+	{
+		searchbutton.click();
+	}
+	
+	public void enter_searchTitle(String titlename)
+	{
+		searchtitle.sendKeys(titlename);
+	}
+	public void click_searchsearch()
+	{
+		searchsearch.click();
+	}
+	public void click_Search_Subcategory_dropDown(String elements)
+	{
+		searchsubcat.click();
+		pageutility= new PageUtility(driver);
+		pageutility.select_ByVisisbleText( elements, searchsubcat);
+	}
+	public String searchTable_text()
+	{
+		return searchtable.getText();
+	}
+	
 }

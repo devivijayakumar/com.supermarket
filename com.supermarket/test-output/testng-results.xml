@@ -1,63 +1,901 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="32" passed="26" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-10T13:32:21 IST" name="Default suite" finished-at="2022-11-10T13:32:44 IST" duration-ms="23491">
+  <suite started-at="2022-11-10T18:57:24 IST" name="Regression build run" finished-at="2022-11-10T19:00:44 IST" duration-ms="200148">
     <groups>
+      <group name="smoke">
+        <method signature="ManageDeliveryBoyTest.verify_search_byPhonenumber()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" name="verify_search_byPhonenumber" class="com.supermarket.tests.ManageDeliveryBoyTest"/>
+        <method signature="ManageSliderTest.verify_EnterLocationInformations()[pri:0, instance:com.supermarket.tests.ManageSliderTest@710c2b53]" name="verify_EnterLocationInformations" class="com.supermarket.tests.ManageSliderTest"/>
+        <method signature="MobileSliderTest.verify_StatusOptionForListOfMobileSlider()[pri:0, instance:com.supermarket.tests.MobileSliderTest@5890e879]" name="verify_StatusOptionForListOfMobileSlider" class="com.supermarket.tests.MobileSliderTest"/>
+        <method signature="PushNotificationTest.verify_PushNotification()[pri:0, instance:com.supermarket.tests.PushNotificationTest@6440112d]" name="verify_PushNotification" class="com.supermarket.tests.PushNotificationTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="LoginTest.verify_profile_image()[pri:0, instance:com.supermarket.tests.LoginTest@7b36aa0c]" name="verify_profile_image" class="com.supermarket.tests.LoginTest"/>
+        <method signature="ManageDeliveryBoyTest.verify_search_byName()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" name="verify_search_byName" class="com.supermarket.tests.ManageDeliveryBoyTest"/>
+        <method signature="ManageDeliveryBoyTest.verify_search_byPhonenumber()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" name="verify_search_byPhonenumber" class="com.supermarket.tests.ManageDeliveryBoyTest"/>
+        <method signature="MobileSliderTest.verify_AddingNewListOfMobileSlider()[pri:0, instance:com.supermarket.tests.MobileSliderTest@5890e879]" name="verify_AddingNewListOfMobileSlider" class="com.supermarket.tests.MobileSliderTest"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2022-11-10T13:32:21 IST" name="Default test" finished-at="2022-11-10T13:32:44 IST" duration-ms="23491">
-      <class name="com.supermarket.tests.ManageLocationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a]" started-at="2022-11-10T13:32:21 IST" name="setUp" finished-at="2022-11-10T13:32:27 IST" duration-ms="5964" status="PASS">
+    <test started-at="2022-11-10T18:57:24 IST" name="Run Module3" finished-at="2022-11-10T18:58:18 IST" duration-ms="54886">
+      <class name="com.supermarket.tests.PushNotificationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.PushNotificationTest@6440112d]" started-at="2022-11-10T18:58:08 IST" name="setUp" finished-at="2022-11-10T18:58:12 IST" duration-ms="4124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_EnterLocationInformations()[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a]" started-at="2022-11-10T13:32:27 IST" name="verify_EnterLocationInformations" finished-at="2022-11-10T13:32:32 IST" duration-ms="4795" status="PASS">
+        <test-method signature="verify_PushNotification()[pri:0, instance:com.supermarket.tests.PushNotificationTest@6440112d]" started-at="2022-11-10T18:58:12 IST" name="verify_PushNotification" finished-at="2022-11-10T18:58:18 IST" duration-ms="6087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_PushNotification -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.PushNotificationTest@6440112d]" started-at="2022-11-10T18:58:18 IST" name="tearDown" finished-at="2022-11-10T18:58:18 IST" duration-ms="588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_PushNotification status=SUCCESS method=PushNotificationTest.verify_PushNotification()[pri:0, instance:com.supermarket.tests.PushNotificationTest@6440112d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.supermarket.tests.PushNotificationTest -->
+      <class name="com.supermarket.tests.ManageUserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageUserTest@6c284af]" started-at="2022-11-10T18:57:24 IST" name="setUp" finished-at="2022-11-10T18:57:37 IST" duration-ms="13675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_user_deactivation()[pri:0, instance:com.supermarket.tests.ManageUserTest@6c284af]" started-at="2022-11-10T18:57:37 IST" name="verify_user_deactivation" finished-at="2022-11-10T18:57:43 IST" duration-ms="6087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_user_deactivation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageUserTest@6c284af]" started-at="2022-11-10T18:57:43 IST" name="tearDown" finished-at="2022-11-10T18:57:44 IST" duration-ms="931" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_user_deactivation status=SUCCESS method=ManageUserTest.verify_user_deactivation()[pri:0, instance:com.supermarket.tests.ManageUserTest@6c284af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.supermarket.tests.ManageUserTest -->
+      <class name="com.supermarket.tests.MobileSliderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.MobileSliderTest@5890e879]" started-at="2022-11-10T18:57:44 IST" name="setUp" finished-at="2022-11-10T18:57:50 IST" duration-ms="5611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_AddingNewListOfMobileSlider()[pri:0, instance:com.supermarket.tests.MobileSliderTest@5890e879]" started-at="2022-11-10T18:57:50 IST" name="verify_AddingNewListOfMobileSlider" finished-at="2022-11-10T18:57:55 IST" duration-ms="5277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_AddingNewListOfMobileSlider -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.MobileSliderTest@5890e879]" started-at="2022-11-10T18:57:55 IST" name="tearDown" finished-at="2022-11-10T18:57:56 IST" duration-ms="646" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_AddingNewListOfMobileSlider status=SUCCESS method=MobileSliderTest.verify_AddingNewListOfMobileSlider()[pri:0, instance:com.supermarket.tests.MobileSliderTest@5890e879] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.MobileSliderTest@5890e879]" started-at="2022-11-10T18:57:56 IST" name="setUp" finished-at="2022-11-10T18:58:02 IST" duration-ms="6142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_StatusOptionForListOfMobileSlider()[pri:0, instance:com.supermarket.tests.MobileSliderTest@5890e879]" started-at="2022-11-10T18:58:02 IST" name="verify_StatusOptionForListOfMobileSlider" finished-at="2022-11-10T18:58:07 IST" duration-ms="4880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_StatusOptionForListOfMobileSlider -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.MobileSliderTest@5890e879]" started-at="2022-11-10T18:58:07 IST" name="tearDown" finished-at="2022-11-10T18:58:08 IST" duration-ms="780" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_StatusOptionForListOfMobileSlider status=SUCCESS method=MobileSliderTest.verify_StatusOptionForListOfMobileSlider()[pri:0, instance:com.supermarket.tests.MobileSliderTest@5890e879] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.supermarket.tests.MobileSliderTest -->
+    </test> <!-- Run Module3 -->
+    <test started-at="2022-11-10T18:57:24 IST" name="Run Module2" finished-at="2022-11-10T18:59:20 IST" duration-ms="116813">
+      <class name="com.supermarket.tests.ManageProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageProductTest@2767e23c]" started-at="2022-11-10T18:58:37 IST" name="setUp" finished-at="2022-11-10T18:58:40 IST" duration-ms="3792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_create_new_product(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.supermarket.tests.ManageProductTest@2767e23c]" started-at="2022-11-10T18:58:40 IST" name="verify_create_new_product" data-provider="manageproductnew" finished-at="2022-11-10T18:58:49 IST" duration-ms="8348" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wheat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grocery]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[335]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[340]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[51]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[670]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[high quality wheat]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-KFM2KDI1', ip: '192.168.43.235', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efb16396d47a17210d24f2c71df188d2, findChildElements {id=c6200c77-fc43-4073-a3c1-f59d3035dcb9, using=xpath, value=.//option[normalize-space(.) = "wheat"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60867/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: efb16396d47a17210d24f2c71df188d2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-KFM2KDI1', ip: '192.168.43.235', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efb16396d47a17210d24f2c71df188d2, findChildElements {id=c6200c77-fc43-4073-a3c1-f59d3035dcb9, using=xpath, value=.//option[normalize-space(.) = "wheat"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60867/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: efb16396d47a17210d24f2c71df188d2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:402)
+at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:219)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy17.findElements(Unknown Source)
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:114)
+at com.supermarket.utilities.PageUtility.select_ByVisisbleText(PageUtility.java:35)
+at com.supermarket.pages.ManageProductPage.click_Subcategory_dropDown(ManageProductPage.java:122)
+at com.supermarket.tests.ManageProductTest.verify_create_new_product(ManageProductTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_create_new_product -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageProductTest@2767e23c]" started-at="2022-11-10T18:58:49 IST" name="tearDown" finished-at="2022-11-10T18:58:50 IST" duration-ms="766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_create_new_product status=FAILURE method=ManageProductTest.verify_create_new_product(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.supermarket.tests.ManageProductTest@2767e23c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageProductTest@2767e23c]" started-at="2022-11-10T18:58:50 IST" name="setUp" finished-at="2022-11-10T18:58:53 IST" duration-ms="3504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_search_functionality()[pri:0, instance:com.supermarket.tests.ManageProductTest@2767e23c]" started-at="2022-11-10T18:58:53 IST" name="verify_search_functionality" finished-at="2022-11-10T18:58:58 IST" duration-ms="5048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_search_functionality -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageProductTest@2767e23c]" started-at="2022-11-10T18:58:58 IST" name="tearDown" finished-at="2022-11-10T18:58:58 IST" duration-ms="249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_search_functionality status=SUCCESS method=ManageProductTest.verify_search_functionality()[pri:0, instance:com.supermarket.tests.ManageProductTest@2767e23c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.supermarket.tests.ManageProductTest -->
+      <class name="com.supermarket.tests.ManageOfferCodeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageOfferCodeTest@402c4085]" started-at="2022-11-10T18:58:20 IST" name="setUp" finished-at="2022-11-10T18:58:24 IST" duration-ms="3351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_SearchOfferCodes(java.lang.String)[pri:0, instance:com.supermarket.tests.ManageOfferCodeTest@402c4085]" started-at="2022-11-10T18:58:24 IST" name="verify_SearchOfferCodes" data-provider="searchOffers" finished-at="2022-11-10T18:58:27 IST" duration-ms="3387" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TRYNEW20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_SearchOfferCodes -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageOfferCodeTest@402c4085]" started-at="2022-11-10T18:58:27 IST" name="tearDown" finished-at="2022-11-10T18:58:27 IST" duration-ms="113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_SearchOfferCodes status=SUCCESS method=ManageOfferCodeTest.verify_SearchOfferCodes(java.lang.String)[pri:0, instance:com.supermarket.tests.ManageOfferCodeTest@402c4085] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageOfferCodeTest@402c4085]" started-at="2022-11-10T18:58:58 IST" name="setUp" finished-at="2022-11-10T18:59:02 IST" duration-ms="3959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_EnterOfferInformations()[pri:1, instance:com.supermarket.tests.ManageOfferCodeTest@402c4085]" started-at="2022-11-10T18:59:02 IST" name="verify_EnterOfferInformations" finished-at="2022-11-10T18:59:19 IST" duration-ms="17205" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-KFM2KDI1', ip: '192.168.43.235', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4418044016384810956031570bbc47c9, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60959/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4418044016384810956031570bbc47c9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-KFM2KDI1', ip: '192.168.43.235', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4418044016384810956031570bbc47c9, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60959/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4418044016384810956031570bbc47c9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getAttribute(Unknown Source)
+at com.supermarket.utilities.GeneralUtilities.get_Attribute(GeneralUtilities.java:57)
+at com.supermarket.pages.ManageOfferCodePage.get_SucessAlert(ManageOfferCodePage.java:98)
+at com.supermarket.tests.ManageOfferCodeTest.verify_EnterOfferInformations(ManageOfferCodeTest.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_EnterOfferInformations -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageOfferCodeTest@402c4085]" started-at="2022-11-10T18:59:19 IST" name="tearDown" finished-at="2022-11-10T18:59:20 IST" duration-ms="922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_EnterOfferInformations status=FAILURE method=ManageOfferCodeTest.verify_EnterOfferInformations()[pri:1, instance:com.supermarket.tests.ManageOfferCodeTest@402c4085] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.supermarket.tests.ManageOfferCodeTest -->
+      <class name="com.supermarket.tests.ManageSliderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageSliderTest@710c2b53]" started-at="2022-11-10T18:57:44 IST" name="setUp" finished-at="2022-11-10T18:57:49 IST" duration-ms="5109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_EnterLocationInformations()[pri:0, instance:com.supermarket.tests.ManageSliderTest@710c2b53]" started-at="2022-11-10T18:57:49 IST" name="verify_EnterLocationInformations" finished-at="2022-11-10T18:57:55 IST" duration-ms="5499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_EnterLocationInformations -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a]" started-at="2022-11-10T13:32:32 IST" name="tearDown" finished-at="2022-11-10T13:32:32 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageSliderTest@710c2b53]" started-at="2022-11-10T18:57:55 IST" name="tearDown" finished-at="2022-11-10T18:57:57 IST" duration-ms="1793" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_EnterLocationInformations status=SUCCESS method=ManageLocationTest.verify_EnterLocationInformations()[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a] output={null}]]]>
+                <![CDATA[[TestResult name=verify_EnterLocationInformations status=SUCCESS method=ManageSliderTest.verify_EnterLocationInformations()[pri:0, instance:com.supermarket.tests.ManageSliderTest@710c2b53] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a]" started-at="2022-11-10T13:32:32 IST" name="setUp" finished-at="2022-11-10T13:32:35 IST" duration-ms="2807" status="PASS">
+      </class> <!-- com.supermarket.tests.ManageSliderTest -->
+      <class name="com.supermarket.tests.ManageOrderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:57:24 IST" name="setUp" finished-at="2022-11-10T18:57:38 IST" duration-ms="13927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_StatusChangeOption()[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a]" started-at="2022-11-10T13:32:35 IST" name="verify_StatusChangeOption" finished-at="2022-11-10T13:32:37 IST" duration-ms="2886" status="PASS">
+        <test-method signature="verify_DetailsOfOrderId406()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:57:38 IST" name="verify_DetailsOfOrderId406" finished-at="2022-11-10T18:57:44 IST" duration-ms="6041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_DetailsOfOrderId406 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:57:44 IST" name="tearDown" finished-at="2022-11-10T18:57:44 IST" duration-ms="527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_DetailsOfOrderId406 status=SUCCESS method=ManageOrderTest.verify_DetailsOfOrderId406()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:57:57 IST" name="setUp" finished-at="2022-11-10T18:58:02 IST" duration-ms="5590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_ResetListOrders()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:58:02 IST" name="verify_ResetListOrders" finished-at="2022-11-10T18:58:10 IST" duration-ms="7388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ResetListOrders -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:58:10 IST" name="tearDown" finished-at="2022-11-10T18:58:10 IST" duration-ms="530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_ResetListOrders status=SUCCESS method=ManageOrderTest.verify_ResetListOrders()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:58:10 IST" name="setUp" finished-at="2022-11-10T18:58:14 IST" duration-ms="3738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_SearchListOrders()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:58:14 IST" name="verify_SearchListOrders" finished-at="2022-11-10T18:58:20 IST" duration-ms="6157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_SearchListOrders -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:58:20 IST" name="tearDown" finished-at="2022-11-10T18:58:20 IST" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_SearchListOrders status=SUCCESS method=ManageOrderTest.verify_SearchListOrders()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:58:27 IST" name="setUp" finished-at="2022-11-10T18:58:30 IST" duration-ms="3148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_ViewOption()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:58:30 IST" name="verify_ViewOption" finished-at="2022-11-10T18:58:36 IST" duration-ms="5742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ViewOption -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4]" started-at="2022-11-10T18:58:36 IST" name="tearDown" finished-at="2022-11-10T18:58:37 IST" duration-ms="503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_ViewOption status=SUCCESS method=ManageOrderTest.verify_ViewOption()[pri:0, instance:com.supermarket.tests.ManageOrderTest@6fa51cd4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.supermarket.tests.ManageOrderTest -->
+    </test> <!-- Run Module2 -->
+    <test started-at="2022-11-10T18:57:24 IST" name="Run Module1" finished-at="2022-11-10T19:00:44 IST" duration-ms="200148">
+      <class name="com.supermarket.tests.ManageExpenseTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T18:59:13 IST" name="setUp" finished-at="2022-11-10T18:59:16 IST" duration-ms="2625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_Manage_expense_new()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T18:59:16 IST" name="verify_Manage_expense_new" finished-at="2022-11-10T18:59:28 IST" duration-ms="12312" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='user_id']"}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-KFM2KDI1', ip: '192.168.43.235', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc959eda29d97fe791fd4d7a628815a4, findElement {using=xpath, value=//select[@id='user_id']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61028/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fc959eda29d97fe791fd4d7a628815a4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='user_id']"}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-KFM2KDI1', ip: '192.168.43.235', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc959eda29d97fe791fd4d7a628815a4, findElement {using=xpath, value=//select[@id='user_id']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61028/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fc959eda29d97fe791fd4d7a628815a4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at com.supermarket.pages.ManageExpensePage.click_mngexpNew_userDropdown(ManageExpensePage.java:189)
+at com.supermarket.tests.ManageExpenseTest.verify_Manage_expense_new(ManageExpenseTest.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Manage_expense_new -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T18:59:28 IST" name="tearDown" finished-at="2022-11-10T18:59:29 IST" duration-ms="521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Manage_expense_new status=FAILURE method=ManageExpenseTest.verify_Manage_expense_new()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T18:59:29 IST" name="setUp" finished-at="2022-11-10T18:59:32 IST" duration-ms="3090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_deleteButton()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T18:59:32 IST" name="verify_deleteButton" finished-at="2022-11-10T18:59:36 IST" duration-ms="3522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_deleteButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T18:59:36 IST" name="tearDown" finished-at="2022-11-10T18:59:36 IST" duration-ms="473" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_deleteButton status=SUCCESS method=ManageExpenseTest.verify_deleteButton()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T18:59:36 IST" name="setUp" finished-at="2022-11-10T18:59:39 IST" duration-ms="3380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_editbutton()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T18:59:39 IST" name="verify_editbutton" finished-at="2022-11-10T18:59:53 IST" duration-ms="13622" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-KFM2KDI1', ip: '192.168.43.235', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8ed78e41926f628ce1ec92cc229d558, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61077}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61077/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8ed78e41926f628ce1ec92cc229d558]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-KFM2KDI1', ip: '192.168.43.235', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8ed78e41926f628ce1ec92cc229d558, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61077}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61077/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8ed78e41926f628ce1ec92cc229d558
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getCssValue(Unknown Source)
+at com.supermarket.pages.ManageExpensePage.edit_alert_message(ManageExpensePage.java:171)
+at com.supermarket.tests.ManageExpenseTest.verify_editbutton(ManageExpenseTest.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_editbutton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T18:59:53 IST" name="tearDown" finished-at="2022-11-10T18:59:53 IST" duration-ms="318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_editbutton status=FAILURE method=ManageExpenseTest.verify_editbutton()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T18:59:53 IST" name="setUp" finished-at="2022-11-10T18:59:56 IST" duration-ms="2835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_manageExpenseCategory_search()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T18:59:56 IST" name="verify_manageExpenseCategory_search" finished-at="2022-11-10T19:00:01 IST" duration-ms="4321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_manageExpenseCategory_search -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T19:00:01 IST" name="tearDown" finished-at="2022-11-10T19:00:01 IST" duration-ms="230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_manageExpenseCategory_search status=SUCCESS method=ManageExpenseTest.verify_manageExpenseCategory_search()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T19:00:01 IST" name="setUp" finished-at="2022-11-10T19:00:04 IST" duration-ms="3062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_newButton()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T19:00:04 IST" name="verify_newButton" finished-at="2022-11-10T19:00:17 IST" duration-ms="13440" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-danger alert-dismissible']"}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-KFM2KDI1', ip: '192.168.43.235', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f9e793ea30948e8c5e276c9e69c7864, findElement {using=xpath, value=//div[@class='alert alert-danger alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61124/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f9e793ea30948e8c5e276c9e69c7864]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-danger alert-dismissible']"}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-KFM2KDI1', ip: '192.168.43.235', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f9e793ea30948e8c5e276c9e69c7864, findElement {using=xpath, value=//div[@class='alert alert-danger alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61124/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f9e793ea30948e8c5e276c9e69c7864
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getCssValue(Unknown Source)
+at com.supermarket.pages.ManageExpensePage.new_alert_message(ManageExpensePage.java:160)
+at com.supermarket.tests.ManageExpenseTest.verify_newButton(ManageExpenseTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_newButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T19:00:17 IST" name="tearDown" finished-at="2022-11-10T19:00:18 IST" duration-ms="415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_newButton status=FAILURE method=ManageExpenseTest.verify_newButton()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T19:00:18 IST" name="setUp" finished-at="2022-11-10T19:00:20 IST" duration-ms="2772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_searchButton()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T19:00:20 IST" name="verify_searchButton" finished-at="2022-11-10T19:00:23 IST" duration-ms="2802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_searchButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753]" started-at="2022-11-10T19:00:23 IST" name="tearDown" finished-at="2022-11-10T19:00:24 IST" duration-ms="317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_searchButton status=SUCCESS method=ManageExpenseTest.verify_searchButton()[pri:0, instance:com.supermarket.tests.ManageExpenseTest@7ef82753] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.supermarket.tests.ManageExpenseTest -->
+      <class name="com.supermarket.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.LoginTest@7b36aa0c]" started-at="2022-11-10T18:57:24 IST" name="setUp" finished-at="2022-11-10T18:57:38 IST" duration-ms="13991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_profile_image()[pri:0, instance:com.supermarket.tests.LoginTest@7b36aa0c]" started-at="2022-11-10T18:57:38 IST" name="verify_profile_image" finished-at="2022-11-10T18:57:42 IST" duration-ms="4333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_profile_image -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.LoginTest@7b36aa0c]" started-at="2022-11-10T18:57:42 IST" name="tearDown" finished-at="2022-11-10T18:57:44 IST" duration-ms="1805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_profile_image status=SUCCESS method=LoginTest.verify_profile_image()[pri:0, instance:com.supermarket.tests.LoginTest@7b36aa0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.LoginTest@7b36aa0c]" started-at="2022-11-10T18:57:44 IST" name="setUp" finished-at="2022-11-10T18:57:48 IST" duration-ms="4494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_textcolor_admin()[pri:0, instance:com.supermarket.tests.LoginTest@7b36aa0c]" started-at="2022-11-10T18:57:48 IST" name="verify_textcolor_admin" finished-at="2022-11-10T18:57:52 IST" duration-ms="4111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_textcolor_admin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.LoginTest@7b36aa0c]" started-at="2022-11-10T18:57:52 IST" name="tearDown" finished-at="2022-11-10T18:57:55 IST" duration-ms="2432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_textcolor_admin status=SUCCESS method=LoginTest.verify_textcolor_admin()[pri:0, instance:com.supermarket.tests.LoginTest@7b36aa0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.supermarket.tests.LoginTest -->
+      <class name="com.supermarket.tests.ManageLocationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a]" started-at="2022-11-10T19:00:24 IST" name="setUp" finished-at="2022-11-10T19:00:26 IST" duration-ms="2662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_EnterLocationInformations()[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a]" started-at="2022-11-10T19:00:26 IST" name="verify_EnterLocationInformations" finished-at="2022-11-10T19:00:31 IST" duration-ms="4580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_EnterLocationInformations -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a]" started-at="2022-11-10T19:00:31 IST" name="tearDown" finished-at="2022-11-10T19:00:31 IST" duration-ms="289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_EnterLocationInformations status=SUCCESS method=ManageLocationTest.verify_EnterLocationInformations()[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a]" started-at="2022-11-10T19:00:31 IST" name="setUp" finished-at="2022-11-10T19:00:34 IST" duration-ms="2833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_StatusChangeOption()[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a]" started-at="2022-11-10T19:00:34 IST" name="verify_StatusChangeOption" finished-at="2022-11-10T19:00:37 IST" duration-ms="2949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_StatusChangeOption -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a]" started-at="2022-11-10T13:32:37 IST" name="tearDown" finished-at="2022-11-10T13:32:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a]" started-at="2022-11-10T19:00:37 IST" name="tearDown" finished-at="2022-11-10T19:00:37 IST" duration-ms="228" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_StatusChangeOption status=SUCCESS method=ManageLocationTest.verify_StatusChangeOption()[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a] output={null}]]]>
+                <![CDATA[[TestResult name=verify_StatusChangeOption status=SUCCESS method=ManageLocationTest.verify_StatusChangeOption()[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a]" started-at="2022-11-10T13:32:37 IST" name="setUp" finished-at="2022-11-10T13:32:40 IST" duration-ms="3002" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a]" started-at="2022-11-10T19:00:37 IST" name="setUp" finished-at="2022-11-10T19:00:40 IST" duration-ms="2600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_UpDateLocationInformations()[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a]" started-at="2022-11-10T13:32:40 IST" name="verify_UpDateLocationInformations" finished-at="2022-11-10T13:32:44 IST" duration-ms="3932" status="PASS">
+        <test-method signature="verify_UpDateLocationInformations()[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a]" started-at="2022-11-10T19:00:40 IST" name="verify_UpDateLocationInformations" finished-at="2022-11-10T19:00:44 IST" duration-ms="3785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_UpDateLocationInformations -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a]" started-at="2022-11-10T13:32:44 IST" name="tearDown" finished-at="2022-11-10T13:32:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a]" started-at="2022-11-10T19:00:44 IST" name="tearDown" finished-at="2022-11-10T19:00:44 IST" duration-ms="211" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_UpDateLocationInformations status=SUCCESS method=ManageLocationTest.verify_UpDateLocationInformations()[pri:0, instance:com.supermarket.tests.ManageLocationTest@1ed6388a] output={null}]]]>
+                <![CDATA[[TestResult name=verify_UpDateLocationInformations status=SUCCESS method=ManageLocationTest.verify_UpDateLocationInformations()[pri:0, instance:com.supermarket.tests.ManageLocationTest@3b0fe47a] output={null}]]]>
               </value>
             </param>
           </params>
@@ -65,6 +903,197 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.supermarket.tests.ManageLocationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.supermarket.tests.ManageDeliveryBoyTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:57:55 IST" name="setUp" finished-at="2022-11-10T18:58:00 IST" duration-ms="5611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_create_delivery_boy()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:00 IST" name="verify_create_delivery_boy" finished-at="2022-11-10T18:58:11 IST" duration-ms="10554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_create_delivery_boy -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:11 IST" name="tearDown" finished-at="2022-11-10T18:58:12 IST" duration-ms="1371" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_create_delivery_boy status=SUCCESS method=ManageDeliveryBoyTest.verify_create_delivery_boy()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:12 IST" name="setUp" finished-at="2022-11-10T18:58:17 IST" duration-ms="4478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_deleteButton_editOption()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:17 IST" name="verify_deleteButton_editOption" finished-at="2022-11-10T18:58:21 IST" duration-ms="3686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_deleteButton_editOption -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:21 IST" name="tearDown" finished-at="2022-11-10T18:58:21 IST" duration-ms="317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_deleteButton_editOption status=SUCCESS method=ManageDeliveryBoyTest.verify_deleteButton_editOption()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:21 IST" name="setUp" finished-at="2022-11-10T18:58:24 IST" duration-ms="3584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_edit_option()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:24 IST" name="verify_edit_option" finished-at="2022-11-10T18:58:31 IST" duration-ms="6928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_edit_option -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:31 IST" name="tearDown" finished-at="2022-11-10T18:58:32 IST" duration-ms="459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_edit_option status=SUCCESS method=ManageDeliveryBoyTest.verify_edit_option()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:32 IST" name="setUp" finished-at="2022-11-10T18:58:35 IST" duration-ms="3239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_new_deliveryBoy_creation()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:35 IST" name="verify_new_deliveryBoy_creation" finished-at="2022-11-10T18:58:44 IST" duration-ms="8451" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.supermarket.tests.ManageDeliveryBoyTest.verify_new_deliveryBoy_creation(ManageDeliveryBoyTest.java:154)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_new_deliveryBoy_creation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:44 IST" name="tearDown" finished-at="2022-11-10T18:58:44 IST" duration-ms="573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_new_deliveryBoy_creation status=FAILURE method=ManageDeliveryBoyTest.verify_new_deliveryBoy_creation()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:44 IST" name="setUp" finished-at="2022-11-10T18:58:49 IST" duration-ms="4964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_search_byEmail()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:49 IST" name="verify_search_byEmail" finished-at="2022-11-10T18:58:53 IST" duration-ms="4143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_search_byEmail -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:53 IST" name="tearDown" finished-at="2022-11-10T18:58:54 IST" duration-ms="571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_search_byEmail status=SUCCESS method=ManageDeliveryBoyTest.verify_search_byEmail()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:54 IST" name="setUp" finished-at="2022-11-10T18:58:57 IST" duration-ms="2984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_search_byName()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:58:57 IST" name="verify_search_byName" finished-at="2022-11-10T18:59:00 IST" duration-ms="3523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_search_byName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:59:00 IST" name="tearDown" finished-at="2022-11-10T18:59:01 IST" duration-ms="334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_search_byName status=SUCCESS method=ManageDeliveryBoyTest.verify_search_byName()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:59:01 IST" name="setUp" finished-at="2022-11-10T18:59:04 IST" duration-ms="3070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_search_byPhonenumber()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:59:04 IST" name="verify_search_byPhonenumber" finished-at="2022-11-10T18:59:07 IST" duration-ms="3534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_search_byPhonenumber -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:59:07 IST" name="tearDown" finished-at="2022-11-10T18:59:08 IST" duration-ms="378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_search_byPhonenumber status=SUCCESS method=ManageDeliveryBoyTest.verify_search_byPhonenumber()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:59:08 IST" name="setUp" finished-at="2022-11-10T18:59:10 IST" duration-ms="2695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_status()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:59:10 IST" name="verify_status" finished-at="2022-11-10T18:59:13 IST" duration-ms="2903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_status -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32]" started-at="2022-11-10T18:59:13 IST" name="tearDown" finished-at="2022-11-10T18:59:13 IST" duration-ms="269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_status status=SUCCESS method=ManageDeliveryBoyTest.verify_status()[pri:0, instance:com.supermarket.tests.ManageDeliveryBoyTest@3e27ba32] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.supermarket.tests.ManageDeliveryBoyTest -->
+    </test> <!-- Run Module1 -->
+  </suite> <!-- Regression build run -->
 </testng-results>

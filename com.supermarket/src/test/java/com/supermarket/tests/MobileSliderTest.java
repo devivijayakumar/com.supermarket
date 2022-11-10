@@ -24,7 +24,10 @@ public class MobileSliderTest extends Base {
 		mobilesliderpage.enter_Category();
 		mobilesliderpage.upLoad_Image(Constants.IMAGEUPLOAD_MOBILE_SLIDER);
 		mobilesliderpage.click_SaveButton();
-		 Assert.assertTrue( mobilesliderpage.savedImage_Displayed());
+		String actualresult=mobilesliderpage.alert_getText();
+		String expectedresult= Constants.EXPECTED_ALERT_TEXT_MOBILE_SLIDER;
+		Assert.assertEquals(actualresult, expectedresult);
+		
 }
 	@Test(groups="smoke")
 	public void verify_StatusOptionForListOfMobileSlider()
@@ -34,7 +37,9 @@ public class MobileSliderTest extends Base {
 		mobilesliderpage=new MobileSliderPage(driver);
 		mobilesliderpage.click_MobileSlide();
 		mobilesliderpage.click_StatusOption();
-		Assert.assertTrue( mobilesliderpage.sucessStatusChangeIcon_Displayed());
+		String actualresult=(mobilesliderpage.status_getText());
+		String expectedresult= constants.EXPECTED_STATUS_CHECK;
+		Assert.assertEquals(actualresult, expectedresult);
 }
 
 }

@@ -19,7 +19,7 @@ public class ManageSliderTest extends Base {
 		loginpage = new LoginPage(driver);
 		loginpage.login();
 		managesliderpage=new ManageSliderPage(driver);
-		//manages
+		managesliderpage.click_ManageSlide();
 		managesliderpage.click_NewOption();
 		managesliderpage.upLoad_Image(Constants.IMAGEUPLOAD_MANAGESLIDE);
 		managesliderpage.enter_Link("http:onlinegrocery.in");

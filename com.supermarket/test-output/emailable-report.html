@@ -8,13 +8,206 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">23,491</td><td></td><td></td></tr>
+<tr><th colspan="8">Regression build run</th></tr>
+<tr><td><a href="#t0">Run Module3</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">54,886</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Run Module2</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">116,813</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Run Module1</a></td><td class="num">15</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">200,148</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">26</th><th class="num">0</th><th class="num">0</th><th class="num attn">6</th><th class="num">371,847</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.supermarket.tests.ManageLocationTest</td><td><a href="#m0">verify_EnterLocationInformations</a></td><td rowspan="1">1668067347423</td><td rowspan="1">4795</td></tr><tr class="passedeven"><td><a href="#m1">verify_StatusChangeOption</a></td><td rowspan="1">1668067355032</td><td rowspan="1">2886</td></tr><tr class="passedeven"><td><a href="#m2">verify_UpDateLocationInformations</a></td><td rowspan="1">1668067360924</td><td rowspan="1">3932</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression build run</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run Module3 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.supermarket.tests.ManageUserTest</td><td><a href="#m0">verify_user_deactivation</a></td><td rowspan="1">1668086857804</td><td rowspan="1">6087</td></tr><tr class="passedodd"><td rowspan="2">com.supermarket.tests.MobileSliderTest</td><td><a href="#m1">verify_AddingNewListOfMobileSlider</a></td><td rowspan="1">1668086870435</td><td rowspan="1">5277</td></tr><tr class="passedodd"><td><a href="#m2">verify_StatusOptionForListOfMobileSlider</a></td><td rowspan="1">1668086882503</td><td rowspan="1">4880</td></tr><tr class="passedeven"><td rowspan="1">com.supermarket.tests.PushNotificationTest</td><td><a href="#m3">verify_PushNotification</a></td><td rowspan="1">1668086892291</td><td rowspan="1">6087</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Run Module2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.supermarket.tests.ManageOfferCodeTest</td><td><a href="#m4">verify_EnterOfferInformations</a></td><td rowspan="1">1668086942768</td><td rowspan="1">17205</td></tr><tr class="failedodd"><td rowspan="1">com.supermarket.tests.ManageProductTest</td><td><a href="#m5">verify_create_new_product</a></td><td rowspan="1">1668086920813</td><td rowspan="1">8348</td></tr><tr><th colspan="4">Run Module2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.supermarket.tests.ManageOfferCodeTest</td><td><a href="#m6">verify_SearchOfferCodes</a></td><td rowspan="1">1668086904121</td><td rowspan="1">3387</td></tr><tr class="passedodd"><td rowspan="4">com.supermarket.tests.ManageOrderTest</td><td><a href="#m7">verify_DetailsOfOrderId406</a></td><td rowspan="1">1668086858055</td><td rowspan="1">6041</td></tr><tr class="passedodd"><td><a href="#m8">verify_ResetListOrders</a></td><td rowspan="1">1668086882625</td><td rowspan="1">7388</td></tr><tr class="passedodd"><td><a href="#m9">verify_SearchListOrders</a></td><td rowspan="1">1668086894285</td><td rowspan="1">6157</td></tr><tr class="passedodd"><td><a href="#m10">verify_ViewOption</a></td><td rowspan="1">1668086910772</td><td rowspan="1">5742</td></tr><tr class="passedeven"><td rowspan="1">com.supermarket.tests.ManageProductTest</td><td><a href="#m11">verify_search_functionality</a></td><td rowspan="1">1668086933509</td><td rowspan="1">5048</td></tr><tr class="passedodd"><td rowspan="1">com.supermarket.tests.ManageSliderTest</td><td><a href="#m12">verify_EnterLocationInformations</a></td><td rowspan="1">1668086869740</td><td rowspan="1">5499</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Run Module1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.supermarket.tests.ManageDeliveryBoyTest</td><td><a href="#m13">verify_new_deliveryBoy_creation</a></td><td rowspan="1">1668086915565</td><td rowspan="1">8451</td></tr><tr class="failedodd"><td rowspan="3">com.supermarket.tests.ManageExpenseTest</td><td><a href="#m14">verify_Manage_expense_new</a></td><td rowspan="1">1668086956595</td><td rowspan="1">12312</td></tr><tr class="failedodd"><td><a href="#m15">verify_editbutton</a></td><td rowspan="1">1668086979926</td><td rowspan="1">13622</td></tr><tr class="failedodd"><td><a href="#m16">verify_newButton</a></td><td rowspan="1">1668087004327</td><td rowspan="1">13440</td></tr><tr><th colspan="4">Run Module1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.supermarket.tests.LoginTest</td><td><a href="#m17">verify_profile_image</a></td><td rowspan="1">1668086858119</td><td rowspan="1">4333</td></tr><tr class="passedeven"><td><a href="#m18">verify_textcolor_admin</a></td><td rowspan="1">1668086868773</td><td rowspan="1">4111</td></tr><tr class="passedodd"><td rowspan="7">com.supermarket.tests.ManageDeliveryBoyTest</td><td><a href="#m19">verify_create_delivery_boy</a></td><td rowspan="1">1668086880930</td><td rowspan="1">10554</td></tr><tr class="passedodd"><td><a href="#m20">verify_deleteButton_editOption</a></td><td rowspan="1">1668086897335</td><td rowspan="1">3686</td></tr><tr class="passedodd"><td><a href="#m21">verify_edit_option</a></td><td rowspan="1">1668086904924</td><td rowspan="1">6928</td></tr><tr class="passedodd"><td><a href="#m22">verify_search_byEmail</a></td><td rowspan="1">1668086929560</td><td rowspan="1">4143</td></tr><tr class="passedodd"><td><a href="#m23">verify_search_byName</a></td><td rowspan="1">1668086937259</td><td rowspan="1">3523</td></tr><tr class="passedodd"><td><a href="#m24">verify_search_byPhonenumber</a></td><td rowspan="1">1668086944189</td><td rowspan="1">3534</td></tr><tr class="passedodd"><td><a href="#m25">verify_status</a></td><td rowspan="1">1668086950797</td><td rowspan="1">2903</td></tr><tr class="passedeven"><td rowspan="3">com.supermarket.tests.ManageExpenseTest</td><td><a href="#m26">verify_deleteButton</a></td><td rowspan="1">1668086972549</td><td rowspan="1">3522</td></tr><tr class="passedeven"><td><a href="#m27">verify_manageExpenseCategory_search</a></td><td rowspan="1">1668086996711</td><td rowspan="1">4321</td></tr><tr class="passedeven"><td><a href="#m28">verify_searchButton</a></td><td rowspan="1">1668087020969</td><td rowspan="1">2802</td></tr><tr class="passedodd"><td rowspan="3">com.supermarket.tests.ManageLocationTest</td><td><a href="#m29">verify_EnterLocationInformations</a></td><td rowspan="1">1668087026752</td><td rowspan="1">4580</td></tr><tr class="passedodd"><td><a href="#m30">verify_StatusChangeOption</a></td><td rowspan="1">1668087034456</td><td rowspan="1">2949</td></tr><tr class="passedodd"><td><a href="#m31">verify_UpDateLocationInformations</a></td><td rowspan="1">1668087040235</td><td rowspan="1">3785</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.supermarket.tests.ManageLocationTest#verify_EnterLocationInformations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.supermarket.tests.ManageLocationTest#verify_StatusChangeOption</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.supermarket.tests.ManageLocationTest#verify_UpDateLocationInformations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Run Module3</h2><h3 id="m0">com.supermarket.tests.ManageUserTest#verify_user_deactivation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.supermarket.tests.MobileSliderTest#verify_AddingNewListOfMobileSlider</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.supermarket.tests.MobileSliderTest#verify_StatusOptionForListOfMobileSlider</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.supermarket.tests.PushNotificationTest#verify_PushNotification</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Run Module2</h2><h3 id="m4">com.supermarket.tests.ManageOfferCodeTest#verify_EnterOfferInformations</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-KFM2KDI1&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4418044016384810956031570bbc47c9, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60959/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4418044016384810956031570bbc47c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getAttribute(Unknown Source)
+	at com.supermarket.utilities.GeneralUtilities.get_Attribute(GeneralUtilities.java:57)
+	at com.supermarket.pages.ManageOfferCodePage.get_SucessAlert(ManageOfferCodePage.java:98)
+	at com.supermarket.tests.ManageOfferCodeTest.verify_EnterOfferInformations(ManageOfferCodeTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.supermarket.tests.ManageProductTest#verify_create_new_product</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr><tr class="param stripe"><td>wheat</td><td>grocery</td><td>5</td><td>15</td><td>335</td><td>340</td><td>51</td><td>670</td><td>high quality wheat</td></tr><tr><th colspan="9">Exception</th></tr><tr><td colspan="9"><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-KFM2KDI1&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efb16396d47a17210d24f2c71df188d2, findChildElements {id=c6200c77-fc43-4073-a3c1-f59d3035dcb9, using=xpath, value=.//option[normalize-space(.) = &quot;wheat&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60867/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: efb16396d47a17210d24f2c71df188d2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:402)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:219)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.findElements(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:114)
+	at com.supermarket.utilities.PageUtility.select_ByVisisbleText(PageUtility.java:35)
+	at com.supermarket.pages.ManageProductPage.click_Subcategory_dropDown(ManageProductPage.java:122)
+	at com.supermarket.tests.ManageProductTest.verify_create_new_product(ManageProductTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.supermarket.tests.ManageOfferCodeTest#verify_SearchOfferCodes</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>TRYNEW20</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.supermarket.tests.ManageOrderTest#verify_DetailsOfOrderId406</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.supermarket.tests.ManageOrderTest#verify_ResetListOrders</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.supermarket.tests.ManageOrderTest#verify_SearchListOrders</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.supermarket.tests.ManageOrderTest#verify_ViewOption</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.supermarket.tests.ManageProductTest#verify_search_functionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.supermarket.tests.ManageSliderTest#verify_EnterLocationInformations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Run Module1</h2><h3 id="m13">com.supermarket.tests.ManageDeliveryBoyTest#verify_new_deliveryBoy_creation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.supermarket.tests.ManageDeliveryBoyTest.verify_new_deliveryBoy_creation(ManageDeliveryBoyTest.java:154)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.supermarket.tests.ManageExpenseTest#verify_Manage_expense_new</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;user_id&apos;]&quot;}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-KFM2KDI1&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc959eda29d97fe791fd4d7a628815a4, findElement {using=xpath, value=//select[@id=&apos;user_id&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61028/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fc959eda29d97fe791fd4d7a628815a4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.supermarket.pages.ManageExpensePage.click_mngexpNew_userDropdown(ManageExpensePage.java:189)
+	at com.supermarket.tests.ManageExpenseTest.verify_Manage_expense_new(ManageExpenseTest.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.supermarket.tests.ManageExpenseTest#verify_editbutton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-KFM2KDI1&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8ed78e41926f628ce1ec92cc229d558, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61077}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61077/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8ed78e41926f628ce1ec92cc229d558
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getCssValue(Unknown Source)
+	at com.supermarket.pages.ManageExpensePage.edit_alert_message(ManageExpensePage.java:171)
+	at com.supermarket.tests.ManageExpenseTest.verify_editbutton(ManageExpenseTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.supermarket.tests.ManageExpenseTest#verify_newButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-KFM2KDI1&apos;, ip: &apos;192.168.43.235&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f9e793ea30948e8c5e276c9e69c7864, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61124/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f9e793ea30948e8c5e276c9e69c7864
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getCssValue(Unknown Source)
+	at com.supermarket.pages.ManageExpensePage.new_alert_message(ManageExpensePage.java:160)
+	at com.supermarket.tests.ManageExpenseTest.verify_newButton(ManageExpenseTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.supermarket.tests.LoginTest#verify_profile_image</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.supermarket.tests.LoginTest#verify_textcolor_admin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.supermarket.tests.ManageDeliveryBoyTest#verify_create_delivery_boy</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.supermarket.tests.ManageDeliveryBoyTest#verify_deleteButton_editOption</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.supermarket.tests.ManageDeliveryBoyTest#verify_edit_option</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.supermarket.tests.ManageDeliveryBoyTest#verify_search_byEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">com.supermarket.tests.ManageDeliveryBoyTest#verify_search_byName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.supermarket.tests.ManageDeliveryBoyTest#verify_search_byPhonenumber</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.supermarket.tests.ManageDeliveryBoyTest#verify_status</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.supermarket.tests.ManageExpenseTest#verify_deleteButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.supermarket.tests.ManageExpenseTest#verify_manageExpenseCategory_search</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.supermarket.tests.ManageExpenseTest#verify_searchButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">com.supermarket.tests.ManageLocationTest#verify_EnterLocationInformations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">com.supermarket.tests.ManageLocationTest#verify_StatusChangeOption</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">com.supermarket.tests.ManageLocationTest#verify_UpDateLocationInformations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

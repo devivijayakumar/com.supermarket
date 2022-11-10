@@ -22,14 +22,15 @@ public class ManageDeliveryBoyTest extends Base {
 	public void verify_create_delivery_boy() {
 		loginpage = new LoginPage(driver);
 		loginpage.login();
-		
+		String timestamp=GeneralUtilities.get_timestamp();
 		excel.setExcelFile("Delivery boy details", "deliveryboylist");
-		String name = excel.getCellData(0, 0);
+		String name = excel.getCellData(0, 0)+"_"+timestamp;
 		String email = excel.getCellData(0, 1);
-		String number = excel.getCellData(0, 2);
-		String address = excel.getCellData(0, 3);
-		String username = excel.getCellData(0, 4);
-		String password = excel.getCellData(0, 5);
+		String number = excel.getCellData(0, 2)+"_"+timestamp;
+		String address = excel.getCellData(0, 3)+"_"+timestamp;
+		String username = excel.getCellData(0, 4)+"_"+timestamp;
+		String password = excel.getCellData(0, 5)+"_"+timestamp;
+		
 		managedeliveryboypage = new ManageDeliveryBoyPage(driver);
 		managedeliveryboypage.click_manageDeliveryBoy();
 		managedeliveryboypage.click_new_button();

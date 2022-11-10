@@ -25,10 +25,13 @@ public class MobileSliderPage {
 	private WebElement saveButton;
 	@FindBy(xpath="//img[@src='https://groceryapp.uniqassosiates.com/public/uploads/small/1667726156_f3e737d7ac87f34c2e44.png']")
 	private WebElement displayedImage;
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Mobileslider/status?id=206&st=inactive&page_ad=1']")
+	@FindBy(xpath="//span[@class='badge bg-success']")
 	private WebElement status;
-	@FindBy(xpath="//i[@class='icon fas fa-check']")
-	private WebElement iconStausChange;
+	@FindBy(xpath = "//h5[text()=' Alert!']")
+	private WebElement alert;
+	@FindBy(xpath = "//span[@class='badge bg-warning']")
+	private WebElement statuscheck;
+	
 	
 	public MobileSliderPage(WebDriver driver)
 	{
@@ -58,6 +61,10 @@ public class MobileSliderPage {
 	{
 		saveButton.click();
 	}
+	public String alert_getText()
+	{
+		return alert.getText();
+	}
 	public boolean savedImage_Displayed() {
 		generalutilities = new GeneralUtilities(driver);
 		return generalutilities.is_Displayed(displayedImage);
@@ -66,9 +73,9 @@ public class MobileSliderPage {
 	{
 		 status.click();
 	}
-	public boolean sucessStatusChangeIcon_Displayed() {
-		generalutilities = new GeneralUtilities(driver);
-		return generalutilities.is_Displayed(iconStausChange);
+	public String status_getText()
+	{
+		return statuscheck.getText();
 	}
-
+	
 }

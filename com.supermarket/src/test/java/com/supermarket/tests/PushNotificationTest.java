@@ -29,7 +29,7 @@ public class PushNotificationTest extends Base {
 		map= pdfreader.Pdf_ReadData("pushnotificationdata");
 		String actualresult= pushnotificationpage.getbackgroundColor_PushNotification("abc","def");
 		constants= new Constants();
-		Assert.assertEquals(actualresult, constants.EXPECTED_ALERT_MESSAGE_PUSHNOTIFICATION);
+		Assert.assertEquals(actualresult, Constants.EXPECTED_ALERT_MESSAGE_PUSHNOTIFICATION);
 	}
 
 }
